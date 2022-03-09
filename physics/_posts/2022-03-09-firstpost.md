@@ -16,6 +16,8 @@ Here we have an electron interacting with wave traveling in the $\hat{y}$ direct
   \begin{tikzpicture}
     \draw[ultra thick, red] (0,0) cos(1, 1) sin (2,2) cos(3, 1) sin(4, 0);
     \draw[<->] (0,-.2) -- node[anchor=north] {$\lambda$} (4,-.2);
+    \draw[->] (5, 1) -- node[anchor = north] {$\vec{v}$} (8, 1);
+    \filldraw[yellow] (10, 0) circle(.1) node[anchor = north] {$e^-$};
 \end{tikzpicture}
 </script>
 </p>
