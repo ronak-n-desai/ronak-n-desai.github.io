@@ -251,6 +251,16 @@ nav {
   border-bottom: none;
 }
 
+.codes > .post {
+  padding-bottom: 2em;
+  border-bottom: 1px solid $lightGray;
+}
+
+.codes > .post:last-child {
+  padding-bottom: 1em;
+  border-bottom: none;
+}
+
 .post {
   blockquote {
     margin: 1.8em .8em;
