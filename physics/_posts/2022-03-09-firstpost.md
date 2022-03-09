@@ -17,6 +17,11 @@ Here we have an electron interacting with wave traveling in the $\hat{y}$ direct
 
 where the speed of the wave is given by $c = f \lambda = \frac{\omega}{k}$. 
 
+The acceleration will be given by 
+
+\begin{equation}
+  a_x = \frac{q E_0}{m} \sin(\omega t)
+\end{equation}
 
 
 
