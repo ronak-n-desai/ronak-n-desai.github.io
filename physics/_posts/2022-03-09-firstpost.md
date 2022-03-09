@@ -5,8 +5,8 @@ use_math: true
 category: physics
 ---
 
-Preview
+Here we have an electron interacting with wave traveling in the $\hat{y}$ direction linearly polarized in the $\hat{x}$ direction
 
 \begin{equation}
-  \alpha = \beta
+  \vec{E} = E_0 \sin(\omega t - k y) \hat{x}
 \end{equation}
