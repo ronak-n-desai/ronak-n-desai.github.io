@@ -13,7 +13,8 @@ Here we have an electron interacting with wave traveling in the $\hat{y}$ direct
 
 <script type="text/tikz">
   \begin{tikzpicture}
-    \draw (0,0) circle (2in);
+    \draw[red] (0,0) circle (2in);
+    \draw[blue] (4, -2) -- (5, -3);
   \end{tikzpicture}
 </script>
 
