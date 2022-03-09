@@ -10,17 +10,13 @@ Next you can update your site name, avatar and other options using the _config.y
 
 The easiest way to make your first post is to edit this one. Go into /_posts/ and update the Hello World markdown file. For more instructions head over to the [Jekyll Now repository](https://github.com/barryclark/jekyll-now) on GitHub.
 
-Three Ways of Displaying Equations
+Two Ways of Displaying Equations
 
-(1) Double Dollar Sign (Displayed)
-
-$$a^2 + b^2 = c^2$$
-
-(2) Single Dollar Sign (Inline)
+(1) Single Dollar Sign (Inline)
 
   $\int_0^\infty x \exp(-x^2) = \frac{\sqrt{\pi}}{2}$
   
-(3) Normal LaTeX syntax with begin equation and end equation blocks
+(2) Normal LaTeX syntax with begin equation and end equation blocks
 
 \begin{equation}
   \alpha + \beta = \gamma
