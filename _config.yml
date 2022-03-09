@@ -9,7 +9,7 @@ name: Research Notebook
 description: Graduate Student at tOSU
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
-avatar: "/images/rasengan.jpg"
+avatar: /images/rasengan.jpg
 
 #
 # Flags below are optional
