@@ -42,7 +42,7 @@ and from this we can arrive at some characteristic velocity, $v \sim \frac{q E_0
   a_0 \equiv \frac{v}{c} = \frac{q E_0}{m \omega c}
 \end{equation}
   
-The Intensity of the laser at Wright-Patterson AFB is around $I = 10^19 W/cm^2$ which corresponds to a peak electric field of around $E_0 = \sqrt{2I}{c \epsilon_0} \sim 10 TV/m$. Also, the laser has a wavelength of around $800$ nm which would  
+The Intensity of the laser at Wright-Patterson AFB is around $I = 10^19 W/cm^2$ which corresponds to a peak electric field of around $E_0 = \sqrt{2I}{c \epsilon_0} \sim 10 TV/m$. Also, the laser has a wavelength of around $800$ nm which would result in quiver velocity around $a_0 \sim 1$ which would indicate that we need to account for relativistic effects even for these types of single-cycle pulses.
 
 
 
