@@ -13,9 +13,9 @@ Here we have an electron interacting with wave traveling in the $\hat{y}$ direct
 
 <script type="text/tikz">
   \begin{tikzpicture}
-    \draw[red] (0,0) circle (2in);
-    \draw[blue] (4, -2) -- (5, -3);
-  \end{tikzpicture}
+    \draw[ultra thick, red] (0,0) cos(1, 1) sin (2,2) cos(3, 1) sin(4, 0);
+    \draw[<->] (0,-.2) -- node[anchor=north] {$\lambda$} (4,-.2);
+\end{tikzpicture}
 </script>
 
 where the speed of the wave is given by $c = f \lambda = \frac{\omega}{k}$. 
