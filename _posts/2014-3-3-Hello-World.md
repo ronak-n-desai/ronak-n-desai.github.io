@@ -17,6 +17,7 @@ Three Ways of Displaying Equations
 $$a^2 + b^2 = c^2$$
 
 (2) Single Dollar Sign (Inline)
+
   $\int_0^\infty x \exp(-x^2) = \frac{\sqrt{\pi}}{2}$
   
 (3) Normal LaTeX syntax with begin equation and end equation blocks
