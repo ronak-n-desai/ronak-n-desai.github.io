@@ -1,15 +1,11 @@
 ---
 layout: page
-title: About
+title: About Me
 permalink: /about/
 ---
 
-Some information about you!
+Hello! I'm a Physics Ph.D. Student at The Ohio State University! I'm working on Laser-Plasma Simulations in the Orban HEDP Group.
 
-### More Information
+### Please email me, I'm bored
 
-A place to include any other types of information that you'd like to include about yourself.
-
-### Contact me
-
-[email@domain.com](mailto:email@domain.com)
+[desai.458@osu.edu](mailto:desai.458@osu.edu)
