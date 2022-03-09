@@ -2,6 +2,7 @@
 layout: post
 title: Created Github Pages Site
 use_math: true
+category: physics
 ---
 
 Next you can update your site name, avatar and other options using the _config.yml file in the root of your repository (shown below).
