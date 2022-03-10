@@ -46,7 +46,7 @@ The Intensity of the laser at Wright-Patterson AFB is around $I = 10^{19} W/cm^2
   
 ![](../images/WPAFB.jpg)
   
-<img src="../images/WPAFB.jpg" width="200" height="200" />
+<img src="../images/WPAFB.jpg" width="200" height="200"/>
 
 
 
