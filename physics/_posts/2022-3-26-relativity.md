@@ -41,10 +41,9 @@ However, when we approach the speed of light (671,000,000 mph), the forces are n
 
 So, in order to save physics from this catastrophe, let us propose some basic rules
 
-\begin{enumerate}
-  \item Nothing can travel faster than the speed of light $c$
-  \item The speed of light $c$ is a constant, independent of the relative motion of the source.
-\end{enumerate}
+
+1. Nothing can travel faster than the speed of light $c$
+2. The speed of light $c$ is a constant, independent of the relative motion of the source.
 
 This second rule might sound very unintuitive, but consider the following scenario. There is a light source on the ground shining forwards at speed $c$ and you are moving backwards at a speed $v$. Classically, you should observe the speed of the light particles at a speed $v+c$, but by rule 1, this would be impossible. So, we are forced to conclude that the speed of light must appear to be moving at $c$ in all inertial reference frames.
 
