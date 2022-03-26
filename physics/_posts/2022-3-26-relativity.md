@@ -23,4 +23,8 @@ Here, the charge $q$ is moving at the same velocity as the charges in the curren
   F \equiv F_E - F_B = \frac{q \lambda}{2 \pi \epsilon_0 d}(1 - \frac{v^2}{c^2})
 \end{equation}
 
-and let us define $\gamma \equiv $
+and let us define $\gamma \equiv \frac{1}{\sqrt{1 - \frac{v^2}{c^2}}}$ so that our expression for the net force on the charge is
+
+\begin{equation}
+  F = \frac{q \lambda}{2 \pi \epsilon_0 d \gamma^2}
+\end{equation}
