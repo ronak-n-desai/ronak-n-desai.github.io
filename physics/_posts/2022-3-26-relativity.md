@@ -15,6 +15,6 @@ This cannot be true because we know that the magnetic force will change the part
 
 Now, let's consider a point charge $q$ a distance $d$ below the current stream.
 
-<img src="/osunotebook/physics/images/charge_mag_field.gif" width="200" height="200"/>
+<img src="/osunotebook/physics/images/charge_mag_field.gif" width="200" height="200" style="display:block; width: 80%;"/>
   
-  
+Here, the charge $q$ is moving at the same velocity as the charges in the current stream. First, let's consider the 'stationary' reference frame where the particle is seen to be moving. Here, the magnetic force is $F_B = q v B = q v \frac{\mu_0 \lambda v}{2 \pi d}$ and the electric force is $F_E = q \frac{\lambda}{2 \pi \epsilon_0 d}
