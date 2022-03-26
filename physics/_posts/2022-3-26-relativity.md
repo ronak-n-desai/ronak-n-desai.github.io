@@ -15,13 +15,6 @@ This cannot be true because we know that the magnetic force will change the part
 
 Now, let's consider a point charge $q$ a distance $d$ below the current stream.
 
-<p style="text-align:center;">
-<script type="text/tikz">
-  \begin{tikzpicture}
-    \draw[ultra thick, red] (0,0) cos(1, 1) sin (2,2) cos(3, 1) sin(4, 0);
-    \draw[<->] (0,-.2) -- node[anchor=north] {$\lambda$} (4,-.2);
-    \draw[->] (5, 1) -- node[anchor = north] {$v$} (8, 1);
-    \draw[black, shading=ball, ball color=yellow] (10, 1) circle(.1) node[anchor = north] {$q$};
-\end{tikzpicture}
-</script>
-</p>
+<img src="/osunotebook/physics/images/charge_mag_field.gif" width="200" height="200"/>
+  
+  
