@@ -94,4 +94,22 @@ Solving for $t'$, we get
 \end{align}
 </p>
 
+4. Now, all that remains is to solve for $A$. We can get this by imposing the requirement that the speed of light of light is observed to be the same in all reference frames. So, if we observe the particle moving at the speed of light in $S$, we will also measure it at the speed of light in $S'$. Mathematically, this means if $\frac{x}{t} = c$, then $\frac{x'}{t'} = c$ as well. Making these substitutions, we get $c t' = A (c t - v t)$ and $t' = A(t - \frac{c t}{v}(1 - \frac{1}{A^2}))$ and if we solve for $t'$ in both, we get
 
+\begin{equation}
+  t' = A(t - \frac{c t}{v}(1 - \frac{1}{A^2})) = A t (1 - \frac{v}{c})
+\end{equation}
+
+We can cancel $A t$ from all sides to get
+
+\begin{equation}
+  1 - \frac{c}{v} + \frac{c}{v A^2} = 1 - \frac{v}{c}
+\end{equation}
+
+and solving for $A$ gets us
+
+\begin{equation}
+  A = \frac{1}{\sqrt{1 - \frac{v^2}{c^2}}
+\end{equation}
+
+which is exactly the $\gamma$ factor we discovered earlier!
