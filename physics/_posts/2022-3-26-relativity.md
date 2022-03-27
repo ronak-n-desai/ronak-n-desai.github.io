@@ -138,6 +138,26 @@ or
 
 This shows that fast moving objects actually appear to be contracted by a factor of $\gamma$! 
 
+Now, let's consider a moving object and lets consider the time measured by a stationary observer $\delta t = t_2 - t_1$ and an observer moving with the object $t_0 = t_2' - t_1'$. In the frame of the moving object, the object appears to be at rest, so that $x_2' = x_1' = x'$. Using the inverse transformation for time, we will get
+
+\begin{equation}
+  \delta t = \gamma (t_2' + \frac{v x'}{c^2} - t_1' - \frac{v x'}{c^2}) = \gamma t_0
+\end{equation}
+
+This shows that fast moving objects actually appear to be taking a longer time to travel some distance. Or in other words, time is dilated!
+
+So, armed with the lorentz transfomation, we can now take another look at our problem with a charge traveling under the influence of the magnetic field. In our stationary reference frame, we see the charges in the current stream moving with speed $v$ and they should actually be seen to be contracted. In other words, $\lambda = \frac{\lambda'}{\gamma}$. Furthermore, we know that the force experienced in the moving frame should be 
+
+\begin{equation}
+  F' = \frac{d p_y'}{dt'} = \frac{d p_y}{dt} \frac{dt}{dt'}
+\end{equation}
+
+where $\frac{dt}{dt'} = \gamma$ due to time dilation and $p_y = p_y'$ because the motion is only in the x direction and should not affect the y direction momentum.
+
+\begin{equation}
+  F' = F \gamma
+\end{equation}
+
 
 References: https://www.feynmanlectures.caltech.edu/II_13.html
 https://en.wikipedia.org/wiki/Length_contraction#:~:text=Length%20contraction%20can%20also%20be%20derived%20from%20time,multiple%20times%2C%20and%20is%20represented%20by%20the%20relation%3A
