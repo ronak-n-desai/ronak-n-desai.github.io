@@ -109,7 +109,15 @@ We can cancel $A t$ from all sides to get
 and solving for $A$ gets us
 
 \begin{equation}
-  A = \frac{1}{\sqrt{1 - \frac{v^2}{c^2}}
+  A = \frac{1}{\sqrt{1 - \frac{v^2}{c^2}}}
 \end{equation}
 
-which is exactly the $\gamma$ factor we discovered earlier!
+which is exactly the $\gamma$ factor we discovered earlier! Putting this all together, we have
+
+<p>
+\begin{align}
+  x' &= \gamma (x - v t) \\
+  t' &= \gamma(t - \frac{v x}{c^2})
+  \gamma &= \frac{1}{\sqrt{1 - \frac{v^2}{c^2}}}
+\end{align}
+</p>
