@@ -124,7 +124,7 @@ which is exactly the $\gamma$ factor we discovered earlier! Putting this all tog
 
 Which are the Lorentz Transformations that govern how time and space get shifted when we move near the speed of light. 
 
-Let's consider what consequences this transformation has. Let's say we are trying to measure the length of a moving object with endpoints $x_2$ and $x_1$. Then, $L = x_2 - x_1$ will be the length in the reference frame to a stationary observer and $L_0' = x_2' - x_1'$ will be the length in the reference frame with the moving object (where the object appears to be stationary) where $x_1' = \gamma(x_1 - v t_1)$ and $x_2' = \gamma(x_2 - v_t_2)$. We call $L_0$ the proper length. Next, we need to measure the endpoints of the object simultaneously so that $t_1 = t_2 = t$. This leaves us with 
+Let's consider what consequences this transformation has. Let's say we are trying to measure the length of a moving object with endpoints $x_2$ and $x_1$. Then, $L = x_2 - x_1$ will be the length in the reference frame to a stationary observer and $L_0' = x_2' - x_1'$ will be the length in the reference frame with the moving object (where the object appears to be stationary) where $x_1' = \gamma(x_1 - v t_1)$ and $x_2' = \gamma(x_2 - v t_2)$. We call $L_0$ the proper length. Next, we need to measure the endpoints of the object simultaneously so that $t_1 = t_2 = t$. This leaves us with 
 
 \begin{equation}
   L_0 = \gamma (x_2 - v t - x_1 + v t) = \gamma L
@@ -134,7 +134,7 @@ or
 
 \begin{equation}
   L = \frac{L_0}{\gamma}
-\end{equation
+\end{equation}
 
 This shows that fast moving objects actually appear to be contracted by a factor of $\gamma$! 
 
@@ -157,6 +157,20 @@ where $\frac{dt}{dt'} = \gamma$ due to time dilation and $p_y = p_y'$ because th
 \begin{equation}
   F' = F \gamma
 \end{equation}
+
+If we take these things into consideration, then we should get 
+
+<p>
+  \begin{align}
+    F &= \frac{q \lambda}{2 \pi \epsilon_0 d} \frac{1}{\gamma^2} \\
+    F' &= \frac{q \lambda'}{2 \pi \epsilon_0 d} = \frac{q \lambda}{2 \pi \epsilon_0 d} \frac{1}{\gamma} \\
+    F' &= \gamma F
+  \end{align}
+</p>
+
+and everything now, no laws of physics are broken!
+
+
 
 
 References: https://www.feynmanlectures.caltech.edu/II_13.html
