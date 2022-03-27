@@ -47,7 +47,7 @@ So, in order to save physics from this catastrophe, let us propose some basic ru
 
 This second rule might sound very unintuitive, but consider the following scenario. There is a light source on the ground shining forwards at speed $c$ and you are moving backwards at a speed $v$. Classically, you should observe the speed of the light particles at a speed $v+c$, but by rule 1, this would be impossible. So, we are forced to conclude that the speed of light must appear to be moving at $c$ in all inertial reference frames. Since speed is a distance divided by time, we must be willing to accept that length and time may no longer be experienced the same in different reference frames!
 
-Let us consider the movement of this particle at speed $v$ in both the 'stationary' and 'moving' reference frames which I will label $S$ and $S'$. Before we introduced any of these light speed rules, we would relate these systems by the following Galilean transformation
+Let us consider the movement of this particle at speed $v$ in the 'stationary' relative to the 'moving' reference frame which I will label $S$ and $S'$. Before we introduced any of these light speed rules, we would relate these systems by the following Galilean transformation
 
 \begin{equation}
   x' = x - v t
@@ -59,4 +59,14 @@ Now, let us propose a more general relation between $x'$ and $x$ and also allow 
   x' &= A x + B t \\
   t' &= C x + D t 
 \end{align}
+
+We should expect $x'$ and $t'$ to be a linear function of $x$ and $t$ because what we consider primed and unprimed is arbitrary and these relations should hold if we expressed $x$ in terms of $x'$ and $t'$. If $x \propto x'^2$ for example, then $x' \propto x^2$ could not be true.
+
+1. First, let's consider $S'$ to be moving exactly with the particle so that the measured position is always $x'=0$ which means $x = vt$
+
+This leads to 
+
+\begin{equation}
+  v = - \frac{B}{A}
+\end{equation}
 
