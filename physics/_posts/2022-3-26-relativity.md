@@ -117,7 +117,28 @@ which is exactly the $\gamma$ factor we discovered earlier! Putting this all tog
 <p>
 \begin{align}
   x' &= \gamma (x - v t) \\
-  t' &= \gamma(t - \frac{v x}{c^2})
+  t' &= \gamma(t - \frac{v x}{c^2}) \\
   \gamma &= \frac{1}{\sqrt{1 - \frac{v^2}{c^2}}}
 \end{align}
 </p>
+
+Which are the Lorentz Transformations that govern how time and space get shifted when we move near the speed of light. 
+
+Let's consider what consequences this transformation has. Let's say we are trying to measure the length of a moving object with endpoints $x_2$ and $x_1$. Then, $L = x_2 - x_1$ will be the length in the reference frame to a stationary observer and $L_0' = x_2' - x_1'$ will be the length in the reference frame with the moving object (where the object appears to be stationary) where $x_1' = \gamma(x_1 - v t_1)$ and $x_2' = \gamma(x_2 - v_t_2)$. We call $L_0$ the proper length. Next, we need to measure the endpoints of the object simultaneously so that $t_1 = t_2 = t$. This leaves us with 
+
+\begin{equation}
+  L_0 = \gamma (x_2 - v t - x_1 + v t) = \gamma L
+\end{equation}
+
+or 
+
+\begin{equation}
+  L = \frac{L_0}{\gamma}
+\end{equation
+
+This shows that fast moving objects actually appear to be contracted by a factor of $\gamma$! 
+
+
+References: https://www.feynmanlectures.caltech.edu/II_13.html
+https://en.wikipedia.org/wiki/Length_contraction#:~:text=Length%20contraction%20can%20also%20be%20derived%20from%20time,multiple%20times%2C%20and%20is%20represented%20by%20the%20relation%3A
+
