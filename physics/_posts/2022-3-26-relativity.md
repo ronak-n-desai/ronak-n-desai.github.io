@@ -55,11 +55,12 @@ Let us consider the movement of this particle at speed $v$ in the 'stationary' r
 
 Now, let us propose a more general relation between $x'$ and $x$ and also allow for the time $t'$ to be different from $t$
 
+<p>
 \begin{align}
   x' &= A x + B t \\
   t' &= C x + D t 
 \end{align}
-
+</p>
 We should expect $x'$ and $t'$ to be a linear function of $x$ and $t$ because what we consider primed and unprimed is arbitrary and these relations should hold if we expressed $x$ in terms of $x'$ and $t'$. If $x \propto x'^2$ for example, then $x' \propto x^2$ could not be true.
 
 1. First, let's consider $S'$ to be moving exactly with the particle so that the measured position is always $x'=0$ which means $x = vt$
