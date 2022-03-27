@@ -47,7 +47,7 @@ So, in order to save physics from this catastrophe, let us propose some basic ru
 
 This second rule might sound very unintuitive, but consider the following scenario. There is a light source on the ground shining forwards at speed $c$ and you are moving backwards at a speed $v$. Classically, you should observe the speed of the light particles at a speed $v+c$, but by rule 1, this would be impossible. So, we are forced to conclude that the speed of light must appear to be moving at $c$ in all inertial reference frames. Since speed is a distance divided by time, we must be willing to accept that length and time may no longer be experienced the same in different reference frames!
 
-Let us consider the movement of this particle at speed $v$ in the 'stationary' relative to the 'moving' reference frame which I will label $S$ and $S'$. Before we introduced any of these light speed rules, we would relate these systems by the following Galilean transformation
+Let us consider the movement of this particle at speed $v$ as before. I will define two reference frames $S$ and $S'$ where $S'$ is moving with speed $v$ relative to $S$. Before we introduced any of these light speed rules, we would relate these systems by the following Galilean transformation
 
 \begin{equation}
   x' = x - v t
@@ -61,13 +61,22 @@ Now, let us propose a more general relation between $x'$ and $x$ and also allow 
   t' &= C x + D t 
 \end{align}
 </p>
+
 We should expect $x'$ and $t'$ to be a linear function of $x$ and $t$ because what we consider primed and unprimed is arbitrary and these relations should hold if we expressed $x$ in terms of $x'$ and $t'$. If $x \propto x'^2$ for example, then $x' \propto x^2$ could not be true.
 
 1. First, let's consider $S'$ to be moving exactly with the particle so that the measured position is always $x'=0$ which means $x = vt$
 
-This leads to 
+This leads to $ v = -\frac{B}{A}$ so that 
 
 \begin{equation}
-  v = - \frac{B}{A}
+  x' = A (x - v t)
 \end{equation}
+
+2. Next, let's consider $S$ to be moving exactly with the particle so that the measured position is always $x=0$ so that $x'=-vt'$. Using this, we would get $t' = D t$ and $-v t' = B t$ so that $D = - \frac{B}{V}$. Using $v = - \frac{B}{A}$, we get $A = D$.
+
+\begin{equation}
+  t' = C x + A t
+\end{equation}
+
+3. Then, we can solve for $x = \frac{x'}{A} + v t$ but it should also have the same lorentz transformation as moving a speed $v$ to the left of the primed frame: $x = A(x' + v t'). 
 
