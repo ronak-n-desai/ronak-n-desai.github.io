@@ -78,5 +78,9 @@ This leads to $ v = -\frac{B}{A}$ so that
   t' = C x + A t
 \end{equation}
 
-3. Then, we can solve for $x = \frac{x'}{A} + v t$ but it should also have the same lorentz transformation as moving a speed $v$ to the left of the primed frame: $x = A(x' + v t'). 
+3. Then, we can solve for $x = \frac{x'}{A} + v t$ but it should also have the same lorentz transformation as moving a speed $v$ to the left of the primed frame: $x = A(x' + v t')$. This means that 
+
+\begin{equation}
+  \frac{x}{A} - v t' = A(x - v t)
+\end{equation}
 
