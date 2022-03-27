@@ -89,8 +89,9 @@ Solving for $t'$, we get
 <p>
 \begin{align}
   t' &= \frac{x}{A v} - \frac{A}{v} (x - v t) \\
-    &= \frac{A}{v} (\frac{x}{A^2} - x + vt) \\
-    &= s
+    &= A (\frac{x}{A^2 v} - \frac{x}{v} + t) \\
+    &= A (t - \frac{x}{v}(1 - \frac{1}{A^2})
 \end{align}
 </p>
-\end{equation}
+
+
