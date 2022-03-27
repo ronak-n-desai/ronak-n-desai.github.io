@@ -84,3 +84,13 @@ This leads to $ v = -\frac{B}{A}$ so that
   \frac{x}{A} - v t' = A(x - v t)
 \end{equation}
 
+Solving for $t'$, we get
+
+<p>
+\begin{align}
+  t' &= \frac{x}{A v} - \frac{A}{v} (x - v t) \\
+    &= \frac{A}{v} (\frac{x}{A^2} - x + vt) \\
+    &= s
+\end{align}
+</p>
+\end{equation}
