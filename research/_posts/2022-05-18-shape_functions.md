@@ -40,8 +40,19 @@ and more generally,
 b_n(x) \equiv \int_{-\infty}^\infty b_{n-1}(t) b_0(x - t) \; dt
 \end{equation}
 
-In EPOCH, $b_3(x)$ is known as the B-SPLINE3 shape function (or just simply refered to as spline in some papers). 
+In EPOCH, $b_3(x)$ is known as the B-SPLINE3 shape function (or just simply refered to as **Spline** in some papers). If we compute the convolutions, we will find the following functional form:
 
+\begin{equation}
+b_3(x) \equiv
+\begin{cases}
+  \frac{1}{6} (8 + 12 x + 6x^2 + x^3) &\mbox{ if } -2 < x < 1 \\
+  \frac{1}{6} (4 - 6x^2 - 3x^3) &\mbox{ if } -2 < x < 1 \\
+  \frac{1}{6} (4 - 6x^2 + 3x^3) &\mbox{ if } -2 < x < 1 \\
+  \frac{1}{6} (8 - 12 x + 6x^2 - x^3) &\mbox{ if } 1 < x < 2 \\
+\end{cases}
+\end{equation}
+
+Below, these shape functions are visualized.
 
 ```python
 import numpy as np
