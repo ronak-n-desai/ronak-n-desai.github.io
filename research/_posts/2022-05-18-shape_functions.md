@@ -10,23 +10,38 @@ In PIC simulations, we are solving for quantities on a discrete grid. So, for ex
 So, to describe this picture with macroparticles being described as point charges, the shape function would be a dirac $\delta$ function. A better formalism would be to smear out the charge uniformly half a cell in each direction. This is the simplest shape function called the **Top-Hat** as is defined as follows:
 
 \begin{equation}
-  th(x) \equiv 
+  b_0(x) \equiv 
   \begin{cases}
   1 &\mbox{if} & \lvert x \rvert \leq 0.5 \\
   0 &\mbox{otherwise} &
   \end{cases}
 \end{equation}
 
-Here, the total area under the curve is 1, which is something that needs to be enforce of all shape functions in order to ensure that we are preserving the same number of particles. Previously, I mentioned that it would be a good idea to have a shape function gives a higher weighting to points closer to the location of the macroparticle. The most simple way to implement this would be a triangle, which we could define mathematically as
+Here, the total area under the curve is 1, which is something that needs to be enforce of all shape functions in order to ensure that we are preserving the same number of particles. Previously, I mentioned that it would be a good idea to have a shape function gives a higher weighting to points closer to the location of the macroparticle. The most simple way to implement this would be a **Triangle**, which we could define mathematically as
 
 \begin{equation}
-  tr(x) \equiv 
+  b_1(x) \equiv 
   \begin{cases}
   1 + x &\mbox{if} & -1 < x < 0 \\
   1 - x &\mbox{if} & 0 < x < 1 \\
   0 & \mbox{otherwise} &
   \end{cases}
 \end{equation}
+
+A more general way to define a shape function would be as convolution of the original top-hat shape function. In this way, it can be shown that we can compute the triangle shape function equivalently as
+
+\begin{equation}
+b_1(x) \equiv \int_{-\infty}^\infty b_0(t) b_0(x - t) \; dt
+\end{equation}
+
+and more generally, 
+
+\begin{equation}
+b_n(x) \equiv \int_{-\infty}^\infty b_{n-1}(t) b_0(x - t) \; dt
+\end{equation}
+
+In EPOCH, $b_3(x)$ is known as the B-SPLINE_3 shape function (or just simply refered to as spline). 
+
 
 ```python
 import numpy as np
