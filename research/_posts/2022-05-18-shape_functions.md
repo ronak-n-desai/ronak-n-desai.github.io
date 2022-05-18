@@ -49,6 +49,7 @@ b_3(x) \equiv
   \frac{1}{6} (4 - 6x^2 - 3x^3) &\mbox{ if } -2 < x < 1 \\
   \frac{1}{6} (4 - 6x^2 + 3x^3) &\mbox{ if } -2 < x < 1 \\
   \frac{1}{6} (8 - 12 x + 6x^2 - x^3) &\mbox{ if } 1 < x < 2 \\
+  0 &\mbox{ otherwise }
 \end{cases}
 \end{equation}
 
