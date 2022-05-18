@@ -12,7 +12,7 @@ So, to describe this picture with macroparticles being described as point charge
 \begin{equation}
   b_0(x) \equiv 
   \begin{cases}
-  1 &\mbox{ if }  \lvert x \rvert \leq 0.5 \\
+  1 &\mbox{ if }  \lvert x \rvert \leq 0.5 \\\\
   0 &\mbox{ otherwise } 
   \end{cases}
 \end{equation}
@@ -22,8 +22,8 @@ Here, the total area under the curve is 1, which is something that needs to be e
 \begin{equation}
   b_1(x) \equiv 
   \begin{cases}
-  1 + x &\mbox{ if } -1 < x < 0 \\
-  1 - x &\mbox{ if } 0 < x < 1 \\
+  1 + x &\mbox{ if } -1 < x < 0 \\\\
+  1 - x &\mbox{ if } 0 < x < 1 \\\\
   0 & \mbox{ otherwise } 
   \end{cases}
 \end{equation}
@@ -45,10 +45,10 @@ In EPOCH, $b_3(x)$ is known as the B-SPLINE3 shape function (or just simply refe
 \begin{equation}
 b_3(x) \equiv
 \begin{cases}
-  \frac{1}{6} (8 + 12 x + 6x^2 + x^3) &\mbox{ if } -2 < x < 1 \\
-  \frac{1}{6} (4 - 6x^2 - 3x^3) &\mbox{ if } -2 < x < 1 \\
-  \frac{1}{6} (4 - 6x^2 + 3x^3) &\mbox{ if } -2 < x < 1 \\
-  \frac{1}{6} (8 - 12 x + 6x^2 - x^3) &\mbox{ if } 1 < x < 2 \\
+  \frac{1}{6} (8 + 12 x + 6x^2 + x^3) &\mbox{ if } -2 < x < 1 \\\\
+  \frac{1}{6} (4 - 6x^2 - 3x^3) &\mbox{ if } -2 < x < 1 \\\\
+  \frac{1}{6} (4 - 6x^2 + 3x^3) &\mbox{ if } -2 < x < 1 \\\\
+  \frac{1}{6} (8 - 12 x + 6x^2 - x^3) &\mbox{ if } 1 < x < 2 \\\\
   0 &\mbox{ otherwise }
 \end{cases}
 \end{equation}
