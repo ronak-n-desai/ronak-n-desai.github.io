@@ -1,1 +1,8 @@
+---
+layout: post
+title: Numerical Heating in PIC simulations
+use_math: true
+category: research
+---
 
+Particle-in-Cell Codes are prone to a phenomenon known as self-heating
