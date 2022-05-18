@@ -22,3 +22,5 @@ plt.plot(xs, y_spline, label='spline')
 plt.legend()
 plt.show()
 ```
+
+<img src="/osunotebook/research/images/shape_functions.png" width="200" height="200"/>
