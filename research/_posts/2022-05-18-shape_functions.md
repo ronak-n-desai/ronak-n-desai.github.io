@@ -7,16 +7,16 @@ category: research
 
 In PIC simulations, we are solving for quantities on a discrete grid. So, for example, if we are looking at charge, it would seem that all the charge would be concentrated in point charges. However, this is not capturing the true physical picture of a simulation, because each of these simulation charges are macroparticles and represent many, many real particles. It would make more sense to smooth these charges out into some type of shape function that represents the charge density. Closer to the macroparticle location, we shold expect a higher value of the shape function and further away, it should be lower.
 
-This can 
-The tophat shape function is a simple unit step function that is non-zero when a half a cell-width's distance away. It can be defined as
+So, to describe this picture with macroparticles being described as point charges, the shape function would be a dirac $\delta$ function. A better formalism would be to smear out the charge uniformly half a cell in each direction. This is the simplest shape function called the **Top-Hat** as is defined as follows:
 
 \begin{equation}
   th(x) \equiv& \begin{cases}
   1 &\mbox{if} & \lvert x \rvert \leq 0.5 \\
   0 &\mbox{otherwise} &
+  \end{cases}
 \end{equation}
 
-Higher-order shape functions are defined as convolutions of this tophat shape function. 
+Previously, I mentioned that it would be a good idea to define 
 ```python
 import numpy as np
 import matplotlib.pyplot as plt
