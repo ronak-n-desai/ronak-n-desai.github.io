@@ -5,7 +5,7 @@ use_math: true
 category: research
 ---
 
-In PIC simulations, we are solving for quantities on a discrete grid. So, for example, if we are looking at charge, it would seem that all the charge would be concentrated in macroscopic point charges. However, this is not capturing the true physical picture of a simulation, because each of these simulation charges are macroparticles and represent many, many real particles. It would make more sense to smooth these charges out into some type of shape function that represents the charge density. Closer to the macroparticle location, we shold expect a higher value of the shape function and further away, it should be lower.
+In PIC simulations, we are solving for quantities on a discrete grid. So, for example, if we are looking at charge, it would seem that all the charge would be concentrated in macroscopic point charges. However, this is not capturing the true physical picture of a simulation, because each of these simulation charges are macroparticles and represent many, many real particles. It would make more sense to smooth these charges out into some type of shape function that represents the charge density. Closer to the macroparticle location, we should expect a higher value of the shape function and further away, it should be lower.
 
 So, to describe this picture with macroparticles being described as point charges, the shape function would be a dirac $\delta$ function. A better formalism would be to smear out the charge uniformly half a cell in each direction. This is the simplest shape function called the **Top-Hat** as is defined as follows:
 
@@ -19,7 +19,7 @@ $$
 \end{equation}
 $$
 
-Here, the total area under the curve is 1, which is something that needs to be enforce of all shape functions in order to ensure that we are preserving the same number of particles. Previously, I mentioned that it would be a good idea to have a shape function gives a higher weighting to points closer to the location of the macroparticle. The most simple way to implement this would be a **Triangle**, which we could define mathematically as
+Here, the total area under the curve is 1, which is something that needs to be enforced of all shape functions in order to ensure that we are preserving the same number of particles. Previously, I mentioned that it would be a good idea to have a shape function gives a higher weighting to points closer to the location of the macroparticle. The most simple way to implement this would be a **Triangle**, which we could define mathematically as
 
 $$
 \begin{equation}
@@ -32,7 +32,7 @@ $$
 \end{equation}
 $$
 
-A more general way to define a shape function would be as convolution of the original top-hat shape function. In this way, it can be shown that we can compute the triangle shape function equivalently as
+A more general way to define a shape function would be as the convolution of the original top-hat shape function. In this way, it can be shown that we can compute the triangle shape function equivalently as
 
 
 \begin{equation}
@@ -66,7 +66,7 @@ Below, these shape functions are visualized.
 ```python
 import numpy as np
 import matplotlib.pyplot as plt
-xs = np.arange(-5, 5, 0.01)
+xs = np.arange(-5, 5, 0.001)
 dx = xs[1]-xs[0]
 tophat = lambda x: 1 if abs(x) <= 0.5 else 0
 y_tophat = np.piecewise(xs, [abs(xs) <= 0.5, abs(xs) > 0.5], [1, 0])
