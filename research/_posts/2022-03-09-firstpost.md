@@ -2,7 +2,7 @@
 layout: post
 title: Intuition about Lasers
 use_math: true
-category: research
+category: researc
 ---
 
 Here we have an electron interacting with wave traveling in the $\hat{y}$ direction linearly polarized in the $\hat{x}$ direction
