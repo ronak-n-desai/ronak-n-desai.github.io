@@ -1,0 +1,23 @@
+---
+layout: post
+title: Gaussian (CGS) Units
+use_math: true
+category: physics
+---
+
+CGS and Gaussian Units are the bane of my existence, so I decided to make a page that compiles all the useful information I can find about them in one place. 
+
+# Base Units
+The Seven SI Base Units are as follows: 
+
+1. Time: second (s)
+2. Length: metre (m)
+3. Mass: kilogram (kg)
+4. Current: ampere (A)
+5. Temperature: Kelvin (K)
+6. Amount: mole (mol)
+7. Luminous Intensity: candela (cd)
+
+The CGS system only has three base units
+
+**References:** 
