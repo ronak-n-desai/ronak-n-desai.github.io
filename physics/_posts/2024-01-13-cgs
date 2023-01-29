@@ -22,10 +22,25 @@ The CGS system only has three base units
 
 # Definition of CGS Gaussian Units
 
-In the SI unit system, the quantity $\mu_0 \equiv 4 \pi \cdot 10^{-7} N/A^2$. However, the Gaussian Unit System defines the following
+In the SI unit system, the quantity $\mu_0 \equiv 4 \pi \cdot 10^{-7} N/A^2$. However, the Gaussian Unit System defines the following for the permitivity of free space:
 
-\[
+\begin{equation}
 \epsilon_0 \equiv \frac{1}{4 \pi}
-/]
+\end{equation}
+
+In this way, we never need to see $\epsilon_0$ in any of our equations. This is chosen so that the Coulomb force law becomes
+
+\begin{equation}
+F = \frac{q_1 q_2}{r^2}
+\end{equation}
+
+Additionally, the relationship between the speed of light and the permitivity and permeability constants is $c = \frac{1}{\sqrt{\mu_0 \epsilon_0}}$ which allows us to replace the permeability constant with
+
+\begin{equation}
+\mu_0 = \frac{4 \pi}{c^2}
+\end{equation}
+
+
+
 
 **References:** 
