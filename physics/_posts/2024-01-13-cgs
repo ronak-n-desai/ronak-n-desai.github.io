@@ -20,4 +20,12 @@ The Seven SI Base Units are as follows:
 
 The CGS system only has three base units
 
+# Definition of CGS Gaussian Units
+
+In the SI unit system, the quantity $\mu_0 \equiv 4 \pi \cdot 10^{-7} N/A^2$. However, the Gaussian Unit System defines the following
+
+\[
+\epsilon_0 \equiv \frac{1}{4 \pi}
+/]
+
 **References:** 
