@@ -37,7 +37,7 @@ F = \frac{q_1 q_2}{r^2}
 Additionally, the relationship between the speed of light and the permitivity and permeability constants is $c = \frac{1}{\sqrt{\mu_0 \epsilon_0}}$ which allows us to replace the permeability constant with
 
 \begin{equation}
-\mu_0 = \frac{4 \pi}{c^2}
+\mu_0 = \frac{4 \pi}{c^2} \text{s}^{2} \text{cm}^{-2}
 \end{equation}
 
 
