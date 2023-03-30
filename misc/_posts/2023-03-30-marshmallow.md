@@ -5,8 +5,10 @@ use_math: true
 category: misc
 ---
 
-# Marshmallow Launch Height Calculator
-Consider the following problem, 
+If we have a heavy object of mass $M_o$, we can launch a ligher object (like a marshmallow) of mass $M_m$ by dropping the object onto a see-saw type of catapult depicted below
+
+![image](https://user-images.githubusercontent.com/98538788/228962577-f88fec7b-18b3-4abf-882f-e9cb5095e776.png)
+
 
 
 ## No Energy Loss
