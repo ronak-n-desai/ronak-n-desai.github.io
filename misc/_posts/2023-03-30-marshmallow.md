@@ -20,6 +20,17 @@ First, the object will drop from a height $H_o$ to the plank at height $2 H_p$ w
 \begin{equation}
 v_o = \sqrt{2 g (H_o - 2 H_p)}
 \end{equation}
+Then, we assume that the collision is perfectly inelastic so that the falling object sticks to the cup. The falling object will strike the plank at an angle $\theta$ off the normal given by $\cos(\theta) = \frac{2 H_p}{H_o}$ and the combined system will have a rotational inertia $I = \frac{1}{12} M_p L^2 + (M_o + M_m + M_c) (L/2)^2$. This results in the following equation for momentum conservation as 
+
+\begin{equation}
+  M_o v_o (L/2) \cos(\theta) = I \omega_1
+\end{equation}
+
+so that 
+
+\begin{equation}
+  \omega_1 = \frac{M_o v_o L \cos(\theta)}{2 I}
+\end{equation}
 
 # Marshmallow Height Calculator 
 <form id="calc" oninput="calcheight()">
