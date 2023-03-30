@@ -121,7 +121,7 @@ Finally, the velocity of the left end of the plank just after the right end hits
               let h1 = h10.value/100;
               let l = l0.value/100;
               out1.innerHTML = Math.round((mO/mM)*h1*100);
-              out2.innerHTML = Math.round(100*3*(-4*h3*h3-l*l)*(-1*12*h1*h3*h3*mO*mO+24*h3*h3*h3*mO*mO+3*h1*l*l*mO*mO+2*h3*l*l*(3*mC*mC-3*mM*mM-mM*mP+mO*mP+mC*(6*mO+mP)))/(l*l*l*l*(3*mM+mP+3*mC+3mO)**2)+2*h3);
+              out2.innerHTML = Math.round(100*3*(-4*h3*h3-l*l)*(-1*12*h1*h3*h3*mO*mO+24*h3*h3*h3*mO*mO+3*h1*l*l*mO*mO+2*h3*l*l*(3*mC*mC-3*mM*mM-mM*mP+mO*mP+mC*(6*mO+mP)))/(l*l*l*l*(3*mM+mP+3*mC+3*mO)**2)+2*h3);
               out3.innerHTML = Math.round(-100*3*(4*h3*h3-l*l)*(-1*12*h1*h3*h3*mO*mO+24*h3*h3*h3*mO*mO+3*h1*l*l*mO*mO+2*h3*l*l*(3*mC*mC-3*mM*mM-mM*mP+mO*mP+mC*(6*mO+mP)))/(4*l*l*l*l*(3*mM+mP)*(3*mM+mP))+2*h3);
        }
        
