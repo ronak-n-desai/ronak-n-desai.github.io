@@ -9,11 +9,17 @@ category: misc
 Consider the following problem, 
 
 
-## In the most naive approach, we assume all the the potential energy in the dropped object gets converted to the potential energy of the marshmallow. This would result in a marshmallow height of 
+## No Energy Loss
+
+In the most naive approach, we assume all the the potential energy in the dropped object gets converted to the potential energy of the marshmallow. This would result in a marshmallow height of 
 
 \begin{equation}
 H = \frac{mO}{mM} h1
 \end{equation}
+
+## All Energy Converted to Rotational Energy
+
+## Inelastic Collision
 
 ## In the 
 <form id="calc" oninput="calcheight()">
