@@ -5,7 +5,7 @@ use_math: true
 category: misc
 ---
 
-Using a heavy object of mass $M_o$, one can launch a ligher object (like a marshmallow) of mass $M_m$ by dropping the object onto a see-saw type of catapult depicted below
+Using a heavy object of mass $M_o$, one can launch a lighter object (like a marshmallow) of mass $M_m$ by dropping the object onto a see-saw type of catapult depicted below
 
 ![image](https://user-images.githubusercontent.com/98538788/228967807-2d8e5a2d-676a-4455-bdab-8997203bf7ba.png)
 
