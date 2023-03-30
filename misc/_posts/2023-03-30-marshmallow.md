@@ -5,7 +5,7 @@ use_math: true
 category: misc
 ---
 
-If we have a heavy object of mass $M_o$, we can launch a ligher object (like a marshmallow) of mass $M_m$ by dropping the object onto a see-saw type of catapult depicted below
+Using a heavy object of mass $M_o$, one can launch a ligher object (like a marshmallow) of mass $M_m$ by dropping the object onto a see-saw type of catapult depicted below
 
 ![image](https://user-images.githubusercontent.com/98538788/228967807-2d8e5a2d-676a-4455-bdab-8997203bf7ba.png)
 
@@ -15,21 +15,40 @@ Here, $M_o$ falls from a height $H_o$ into a cup of mass $M_c$ that is affixed t
 
 # Predicting the Maximum Marshmallow Height
 
-First, the object will drop from a height $H_o$ to the plank at height $2 H_p$ where its gravitational potential energy is converted into kinetic energy. We can solve for the velocity just before impact as
+First, the object will drop from a height $H_o$ to the plank at height $2 H_p$ where its gravitational potential energy is converted into kinetic energy. The velocity just before impact would be
 
 \begin{equation}
 v_o = \sqrt{2 g (H_o - 2 H_p)}
 \end{equation}
-Then, we assume that the collision is perfectly inelastic so that the falling object sticks to the cup. The falling object will strike the plank at an angle $\theta$ off the normal given by $\cos(\theta) = \frac{2 H_p}{H_o}$ and the combined system will have a rotational inertia $I = \frac{1}{12} M_p L^2 + (M_o + M_m + M_c) (L/2)^2$. This results in the following equation for momentum conservation as 
+Then, assume that the collision is perfectly inelastic so that the falling object sticks to the cup. The falling object will strike the plank at an angle $\theta$ off the normal given by $\cos(\theta) = \frac{2 H_p}{H_o}$ and the combined system will have a rotational inertia $I = \frac{1}{12} M_p L^2 + (M_o + M_m + M_c) (L/2)^2$. This results in the following equation for momentum conservation as 
 
 \begin{equation}
   M_o v_o (L/2) \cos(\theta) = I \omega_1
 \end{equation}
-
-so that 
+so that the angular speed $\omega_1$ of the plank is
 
 \begin{equation}
   \omega_1 = \frac{M_o v_o L \cos(\theta)}{2 I}
+\end{equation}
+Next, the imbalance of mass on the right and left hand side will add rotational kinetic energy as the difference in gravitational energy in the system. This can be expressed as
+
+\begin{equation}
+M_m g (2 H_p) + \frac{1}{2} I \omega_1^2 = (M_o+M_c) g (2 H_p) + \frac{1}{2} I \omega_2^2 
+\end{equation}
+which can be rearranged for an increased angular speed $\omega_2$
+
+\begin{equation}
+  \omega_2 = \sqrt{\frac{2 g (2 H_p) (M_c + M_o - M_m)}{I} + \omega_1^2
+\end{equation}
+After the right end hits the floor, the plank will begin to rotate about its end with a new rotational inertia $I' = \frac{1}{3} M_p L^2 + M_m L^2$. Assuming that angular momentum is conserved, the new angular speed just after the collision with the ground is given by
+
+\begin{equation}
+\omega_3 = \omega_2 \frac{I}{I'}
+\end{equation}
+Finally, the velocity of the left end of the plank just after the right end hits the ground is $v_p = L \omega_3$ which will be equal to the velocity of the marshmallow as it is also on the left end of the rod. The marshmallow will fly at this velocity into the air with a vertical component given by $v_m = v_p \cos(\theta)$ and reach a final height $H_m$ given by 
+
+\begin{equation}
+  H_m = \frac{(v_p \cos(\theta))^2}{2 g} + 2 H_p
 \end{equation}
 
 # Marshmallow Height Calculator 
@@ -69,7 +88,7 @@ so that
   <label for="output2"><strong>Total Energy Conservation Height (cm)</strong>: </label><span class="output" id="output2" style="color:blue"></span>
   </div>
   <div> 
-  <label for="output3"><strong>Other Height (cm)</strong>: </label><span class="output" id="output3" style="color:blue"></span>
+  <label for="output3"><strong>Calculated Marshmallow Height (cm)</strong>: </label><span class="output" id="output3" style="color:blue"></span>
   </div>
 </form>
 
@@ -95,7 +114,7 @@ so that
               let l = l0.value/100;
               out1.innerHTML = Math.round(-3*(4*h3*h3-l*l)*100);
               out2.innerHTML = Math.round((mO/mM)*h1*100);
-              out3.innerHTML = Math.round(-100*3*(4*h3*h3-l*l)*(-1*12*h1*h3*h3*mO*mO+24*h3*h3*h3*mO*mO+3*h1*l*l*mO*mO+2*h3*l*l*(3*mC*mC-3*mM*mM-mM*mP+mO*mP+mC*(6*mO+mP)))/(4*l*l*l*l*(3*mM+mP)*(3*mM+mP)));
+              out3.innerHTML = Math.round(-100*3*(4*h3*h3-l*l)*(-1*12*h1*h3*h3*mO*mO+24*h3*h3*h3*mO*mO+3*h1*l*l*mO*mO+2*h3*l*l*(3*mC*mC-3*mM*mM-mM*mP+mO*mP+mC*(6*mO+mP)))/(4*l*l*l*l*(3*mM+mP)*(3*mM+mP))+2*h3);
        }
        
 </script>
