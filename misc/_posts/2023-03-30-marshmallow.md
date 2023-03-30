@@ -7,7 +7,11 @@ category: misc
 
 If we have a heavy object of mass $M_o$, we can launch a ligher object (like a marshmallow) of mass $M_m$ by dropping the object onto a see-saw type of catapult depicted below
 
-![image](https://user-images.githubusercontent.com/98538788/228962577-f88fec7b-18b3-4abf-882f-e9cb5095e776.png)
+![image](https://user-images.githubusercontent.com/98538788/228967807-2d8e5a2d-676a-4455-bdab-8997203bf7ba.png)
+
+Here, $M_o$ falls from a height $H_o$ into a cup of mass $M_c$ that is affixed to the end of a plank of length $L$ and mass $M_p$. The middle of the plank is elevated to a height $H_p$. After the heavy object falls into the cup, it will cause the plank to rotate downwards until the right end of the plank hits the ground. This will impart a velocity upwards into the marshmallow $v_m$ launching it up to a final height $H_m$. 
+
+![image](https://user-images.githubusercontent.com/98538788/228967964-815353c3-ea23-49b4-ad26-82975437ee80.png)
 
 
 
