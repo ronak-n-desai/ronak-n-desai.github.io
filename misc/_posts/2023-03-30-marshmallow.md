@@ -7,6 +7,15 @@ category: misc
 
 # Marshmallow Launch Height Calculator
 Consider the following problem, 
+
+
+## In the most naive approach, we assume all the the potential energy in the dropped object gets converted to the potential energy of the marshmallow. This would result in a marshmallow height of 
+
+\begin{equation}
+H = \frac{mO}{mM} h1
+\end{equation}
+
+## In the 
 <form id="calc" oninput="calcheight()">
   <div>
   <label for="mM">Marshmallow Mass (g):</label>
