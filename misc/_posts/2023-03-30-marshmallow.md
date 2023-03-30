@@ -13,6 +13,14 @@ Here, $M_o$ falls from a height $H_o$ into a cup of mass $M_c$ that is affixed t
 
 ![image](https://user-images.githubusercontent.com/98538788/228967964-815353c3-ea23-49b4-ad26-82975437ee80.png)
 
+# Obtaining an Upper Limit
+
+Due to conservation of energy, we know that the amount of gravitational potential energy of the marshmallow at its peak height must be less than the amount of potential energy of the object at its initial height. Using this, we can predict the maximum possible height of the marshmallow as 
+
+\begin{equation}
+H_m = \frac{M_o}{M_m} H_o
+\end{equation}
+
 # Predicting the Maximum Marshmallow Height
 
 First, the object will drop from a height $H_o$ to the plank at height $2 H_p$ where its gravitational potential energy is converted into kinetic energy. The velocity just before impact would be
@@ -113,7 +121,7 @@ Finally, the velocity of the left end of the plank just after the right end hits
               let h1 = h10.value/100;
               let l = l0.value/100;
               out1.innerHTML = Math.round(-3*(4*h3*h3-l*l)*100);
-              out2.innerHTML = Math.round((mO/mM)*(h1-2*h3)*100);
+              out2.innerHTML = Math.round((mO/mM)*h1*100);
               out3.innerHTML = Math.round(-100*3*(4*h3*h3-l*l)*(-1*12*h1*h3*h3*mO*mO+24*h3*h3*h3*mO*mO+3*h1*l*l*mO*mO+2*h3*l*l*(3*mC*mC-3*mM*mM-mM*mP+mO*mP+mC*(6*mO+mP)))/(4*l*l*l*l*(3*mM+mP)*(3*mM+mP))+2*h3);
        }
        
