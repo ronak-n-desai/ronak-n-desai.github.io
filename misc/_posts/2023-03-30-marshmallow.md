@@ -13,21 +13,15 @@ Here, $M_o$ falls from a height $H_o$ into a cup of mass $M_c$ that is affixed t
 
 ![image](https://user-images.githubusercontent.com/98538788/228967964-815353c3-ea23-49b4-ad26-82975437ee80.png)
 
+# Predicting the Maximum Marshmallow Height
 
-
-## No Energy Loss
-
-In the most naive approach, we assume all the the potential energy in the dropped object gets converted to the potential energy of the marshmallow. This would result in a marshmallow height of 
+First, the object will drop from a height $H_o$ to the plank at height $2 H_p$ where its gravitational potential energy is converted into kinetic energy. We can solve for the velocity just before impact as
 
 \begin{equation}
-H = \frac{mO}{mM} h1
+v_o = \sqrt{2 g (H_o - 2 H_p)}
 \end{equation}
 
-## All Energy Converted to Rotational Energy
-
-## Inelastic Collision
-
-## In the 
+# Marshmallow Height Calculator 
 <form id="calc" oninput="calcheight()">
   <div>
   <label for="mM">Marshmallow Mass (g):</label>
