@@ -20,6 +20,7 @@ Due to conservation of energy, we know that the amount of gravitational potentia
 \begin{equation}
 H_m = \frac{M_o}{M_m} H_o
 \end{equation}
+however, the actual height should be much less than this due to energy being transferred to the plank as well as being lost through collisions.
 
 # Predicting the Maximum Marshmallow Height
 
