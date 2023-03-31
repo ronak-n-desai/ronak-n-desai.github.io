@@ -48,10 +48,10 @@ which can be rearranged for an increased angular speed $\omega_2$
 \begin{equation}
   \omega_2 = \sqrt{\frac{2 g (2 H_p) (M_c + M_o - M_m)}{I} + \omega_1^2}
 \end{equation}
-After the right end hits the floor, the plank will begin to rotate about its end with a new rotational inertia $I' = \frac{1}{3} M_p L^2 + M_m L^2$. Assuming that angular momentum is conserved, the new angular speed just after the collision with the ground is given by
+After the right end hits the floor, the plank will begin to rotate about its end with a new rotational inertia $I' = \frac{1}{3} M_p L^2 + M_m L^2$. Here, the physics gets complicated and assuming energy conservation, one can get
 
 \begin{equation}
-\omega_3 = \omega_2 \frac{I}{I'}
+\omega_3 = \omega_2 \sqrt{\frac{I}{I'}}
 \end{equation}
 Finally, the velocity of the left end of the plank just after the right end hits the ground is $v_p = L \omega_3$ which will be equal to the velocity of the marshmallow as it is also on the left end of the rod. The marshmallow will fly at this velocity into the air with a vertical component given by $v_m = v_p \cos(\theta)$ and reach a final height $H_m$ given by 
 
@@ -121,8 +121,8 @@ Finally, the velocity of the left end of the plank just after the right end hits
               let h1 = h10.value/100;
               let l = l0.value/100;
               out1.innerHTML = Math.round((mO/mM)*h1*100);
-              out2.innerHTML = Math.round(100*3*(-4*h3*h3-l*l)*(-1*12*h1*h3*h3*mO*mO+24*h3*h3*h3*mO*mO+3*h1*l*l*mO*mO+2*h3*l*l*(3*mC*mC-3*mM*mM-mM*mP+mO*mP+mC*(6*mO+mP)))/(l*l*l*l*(3*mM+mP+3*mC+3*mO)**2)+2*h3);
-              out3.innerHTML = Math.round(-100*3*(4*h3*h3-l*l)*(-1*12*h1*h3*h3*mO*mO+24*h3*h3*h3*mO*mO+3*h1*l*l*mO*mO+2*h3*l*l*(3*mC*mC-3*mM*mM-mM*mP+mO*mP+mC*(6*mO+mP)))/(4*l*l*l*l*(3*mM+mP)*(3*mM+mP))+2*h3);
+              out2.innerHTML = Math.round(100*3*(-4*h3**2+l**2)*(-12*h1*h3*h3*mO*mO+24*h3*h3*h3*mO*mO+3*h1*l*l*mO*mO+2*h3*l*l*(3*mC*mC-3*mM*mM-mM*mP+mO*mP+mC*(6*mO+mP)))/(l*l*l*l*(3*mM+mP+3*mC+3*mO)**2)+2*h3);
+              out3.innerHTML = Math.round(-100*3*(4*h3*h3-l*l)*(-12*h1*h3*h3*mO*mO+24*h3*h3*h3*mO*mO+3*h1*l*l*mO*mO+2*h3*l*l*(3*mC*mC-3*mM*mM-mM*mP+mO*mP+mC*(6*mO+mP)))/(l**4*(3*mM+mP)*(3*mM+mP+3*mO+3*mC))+2*h3);
        }
        
 </script>
