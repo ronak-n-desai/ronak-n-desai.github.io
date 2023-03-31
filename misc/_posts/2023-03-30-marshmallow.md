@@ -29,7 +29,7 @@ First, the object will drop from a height $H_o$ to the plank at height $2 H_p$ w
 \begin{equation}
 v_o = \sqrt{2 g (H_o - 2 H_p)}
 \end{equation}
-Then, assume that the collision is perfectly inelastic so that the falling object sticks to the cup. The falling object will strike the plank at an angle $\theta$ off the normal given by $\sin(\theta) = \frac{2 H_p}{H_o}$ and the combined system will have a rotational inertia $I = \frac{1}{12} M_p L^2 + (M_o + M_m + M_c) (L/2)^2$. This results in the following equation for momentum conservation as 
+Then, assume that the collision is perfectly inelastic so that the falling object sticks to the cup. The falling object will strike the plank at an angle $\theta$ off the normal given by $\sin(\theta) = \frac{2 H_p}{H_o}$ and the combined system will have a rotational inertia $I = (1/12) M_p L^2 + (M_o + M_m + M_c) (L/2)^2$. This results in the following equation for momentum conservation as 
 
 \begin{equation}
   M_o v_o (L/2) \cos(\theta) = I \omega_1
@@ -49,7 +49,7 @@ which can be rearranged for an increased angular speed $\omega_2$
 \begin{equation}
   \omega_2 = \sqrt{\frac{2 g (2 H_p) (M_c + M_o - M_m)}{I} + \omega_1^2}
 \end{equation}
-After the right end hits the floor, the plank will begin to rotate about its end with a new rotational inertia $I' = \frac{1}{3} M_p L^2 + M_m L^2$. Here, the physics gets complicated and assuming energy conservation, one can get
+After the right end hits the floor, the plank will begin to rotate about its end with a new rotational inertia $I' = \frac{1}{3} M_p L^2 + M_m L^2$. Here, the physics gets complicated but assuming energy conservation can lead to
 
 \begin{equation}
 \omega_3 = \omega_2 \sqrt{\frac{I}{I'}}
