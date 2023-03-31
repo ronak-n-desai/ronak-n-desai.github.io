@@ -91,13 +91,10 @@ Finally, the velocity of the left end of the plank just after the right end hits
   <input type="number" step="any" id="l" name="l" min="10" max="100" value="61.5" size="5">
   </div>
   <div> 
-  <label for="output1"><strong>Total Energy Conservation Height (cm)</strong>: </label><span class="output" id="output1" style="color:blue"></span>
+  <label for="output1"><strong>Height Upper Bound (cm)</strong>: </label><span class="output" id="output1" style="color:blue"></span>
   </div>
   <div> 
-  <label for="output2"><strong>Calculated Height 1 (cm)</strong>: </label><span class="output" id="output2" style="color:blue"></span>
-  </div>
-  <div> 
-  <label for="output3"><strong>Calculated Height 2 (cm)</strong>: </label><span class="output" id="output3" style="color:blue"></span>
+  <label for="output3"><strong>Calculated Height (cm)</strong>: </label><span class="output" id="output3" style="color:blue"></span>
   </div>
 </form>
 
@@ -110,7 +107,6 @@ Finally, the velocity of the left end of the plank just after the right end hits
        const h10 = document.getElementById("h1");
        const l0 = document.getElementById("l");
        const out1 = document.getElementById("output1");
-       const out2 = document.getElementById("output2");
        const out3 = document.getElementById("output3");
        
        function calcheight() {
@@ -122,7 +118,6 @@ Finally, the velocity of the left end of the plank just after the right end hits
               let h1 = h10.value/100.0;
               let l = l0.value/100.0;
               out1.innerHTML = Math.round((mO/mM)*h1*100);
-              out2.innerHTML = Math.round(100*3*(-4*h3**2+l**2)*(-12*h1*h3*h3*mO*mO+24*h3*h3*h3*mO*mO+3*h1*l*l*mO*mO+2*h3*l*l*(3*mC*mC-3*mM*mM-mM*mP+mO*mP+mC*(6*mO+mP)))/(l*l*l*l*(3*mM+mP+3*mC+3*mO)**2)+2*h3);
               out3.innerHTML = Math.round(-100*3*(4*h3*h3-l*l)*(-12*h1*h3**2*mO**2+24*h3**2*mO**2+3*h1*l**2*mO**2+2*h3*l**2*(3*mC**2-3*mM**2-mM*mP+mO*mP+mC*(6*mO+mP)))/(l**4*(3*mM+mP)*(3*mM+mP+3*mO+3*mC))+2*h3);
        }
        
