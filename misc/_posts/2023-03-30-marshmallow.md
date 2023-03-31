@@ -113,16 +113,16 @@ Finally, the velocity of the left end of the plank just after the right end hits
        const out3 = document.getElementById("output3");
        
        function calcheight() {
-              let mP = mP0.value/1000;
-              let mO = mO0.value/1000;
-              let mM = mM0.value/1000;
-              let mC = mC0.value/1000;
-              let h3 = h30.value/100;
-              let h1 = h10.value/100;
-              let l = l0.value/100;
+              let mP = mP0.value/1000.0;
+              let mO = mO0.value/1000.0;
+              let mM = mM0.value/1000.0;
+              let mC = mC0.value/1000.0;
+              let h3 = h30.value/100.0;
+              let h1 = h10.value/100.0;
+              let l = l0.value/100.0;
               out1.innerHTML = Math.round((mO/mM)*h1*100);
               out2.innerHTML = Math.round(100*3*(-4*h3**2+l**2)*(-12*h1*h3*h3*mO*mO+24*h3*h3*h3*mO*mO+3*h1*l*l*mO*mO+2*h3*l*l*(3*mC*mC-3*mM*mM-mM*mP+mO*mP+mC*(6*mO+mP)))/(l*l*l*l*(3*mM+mP+3*mC+3*mO)**2)+2*h3);
-              out3.innerHTML = Math.round(-100*3*(4*h3*h3-l*l)*(-12*h1*h3*h3*mO*mO+24*h3*h3*h3*mO*mO+3*h1*l*l*mO*mO+2*h3*l*l*(3*mC*mC-3*mM*mM-mM*mP+mO*mP+mC*(6*mO+mP)))/(l**4*(3*mM+mP)*(3*mM+mP+3*mO+3*mC))+2*h3);
+              out3.innerHTML = Math.round(-100*3*(4*h3*h3-l*l)*(-12*h1*h3**2*mO**2+24*h3**2*mO**2+3*h1*l**2*mO**2+2*h3*l**2*(3*mC**2-3*mM**2-mM*mP+mO*mP+mC*(6*mO+mP)))/(l**4*(3*mM+mP)*(3*mM+mP+3*mO+3*mC))+2*h3);
        }
        
 </script>
