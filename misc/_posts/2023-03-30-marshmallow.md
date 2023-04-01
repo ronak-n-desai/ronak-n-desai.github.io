@@ -49,7 +49,12 @@ which can be rearranged for an increased angular speed $\omega_2$
 \begin{equation}
   \omega_2 = \sqrt{\frac{2 g (2 H_p) (M_c + M_o - M_m)}{I} + \omega_1^2}
 \end{equation}
-After the right end hits the floor, the plank will begin to rotate about its end with a new rotational inertia $I' = \frac{1}{3} M_p L^2 + M_m L^2$. Here, the physics gets complicated but assuming energy conservation can lead to
+At this point, we could predict the velocity of the marshmallow to be given by the current speed of the left end of the plank, which would be 
+
+\begin{equation}
+    v_p = (L/2) \omega_2
+\end{equation}
+but this under-predicts the actual height of the marshmallow. Instead, after the right end hits the floor, if plank rotates about its end, it will have a new rotational inertia $I' = \frac{1}{3} M_p L^2 + M_m L^2$. Assuming energy conservation leads to
 
 \begin{equation}
 \omega_3 = \omega_2 \sqrt{\frac{I}{I'}}
@@ -94,7 +99,10 @@ Finally, the velocity of the left end of the plank just after the right end hits
   <label for="output1"><strong>Height Upper Bound (cm)</strong>: </label><span class="output" id="output1" style="color:blue"></span>
   </div>
   <div> 
-  <label for="output3"><strong>Calculated Height (cm)</strong>: </label><span class="output" id="output3" style="color:blue"></span>
+  <label for="output2"><strong>Calculated Height 1 (cm)</strong>: </label><span class="output" id="output2" style="color:blue"></span>
+  </div>
+  <div> 
+  <label for="output3"><strong>Calculated Height 2 (cm)</strong>: </label><span class="output" id="output3" style="color:blue"></span>
   </div>
 </form>
 
@@ -107,6 +115,7 @@ Finally, the velocity of the left end of the plank just after the right end hits
        const h10 = document.getElementById("h1");
        const l0 = document.getElementById("l");
        const out1 = document.getElementById("output1");
+       const out2 = document.getElementById("output1");
        const out3 = document.getElementById("output3");
        
        function calcheight() {
@@ -118,6 +127,7 @@ Finally, the velocity of the left end of the plank just after the right end hits
               let h1 = h10.value/100.0;
               let l = l0.value/100.0;
               out1.innerHTML = Math.round((mO/mM)*h1*100);
+              out2.innerHTML = Math.round(-100*3*(4*h3*h3-l*l)*(-12*h1*h3**2*mO**2+24*h3**2*mO**2+3*h1*l**2*mO**2+2*h3*l**2*(3*mC**2-3*mM**2-mM*mP+mO*mP+mC*(6*mO+mP)))/(l**4*(3(mC+3*mM+3*mO+mP))+2*h3);
               out3.innerHTML = Math.round(-100*3*(4*h3*h3-l*l)*(-12*h1*h3**2*mO**2+24*h3**2*mO**2+3*h1*l**2*mO**2+2*h3*l**2*(3*mC**2-3*mM**2-mM*mP+mO*mP+mC*(6*mO+mP)))/(l**4*(3*mM+mP)*(3*mM+mP+3*mO+3*mC))+2*h3);
        }
        
