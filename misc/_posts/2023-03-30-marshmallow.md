@@ -9,34 +9,33 @@ Using a heavy object of mass $M_o$, one can launch a lighter object (like a mars
 
 ![image](https://user-images.githubusercontent.com/98538788/228967807-2d8e5a2d-676a-4455-bdab-8997203bf7ba.png)
 
-Here, $M_o$ falls from a height $H_o$ into a cup of mass $M_c$ that is affixed to the end of a plank of length $L$ and mass $M_p$. The inclined plane that the plank sits on is of height $H_p$. After the heavy object falls into the cup, it will cause the plank to rotate downwards until the right end of the plank hits the ground. This will impart a velocity upwards and to the right into the marshmallow $v_p$ launching it up to a final height $H_m$. 
+Here, $M_o$ falls from a height $H_o$ into a cup of mass $M_c$ that is affixed to the end of a plank of length $L$ and mass $M_p$. The inclined plane that the plank sits on has a horizontal length $x$ and diagonal length $r$. After the heavy object falls into the cup, it will cause the plank to rotate downwards until the right end of the plank hits the ground. This will impart a velocity upwards and to the right into the marshmallow $v_p$ launching it up to a final height $H_m$. 
 
 ![pic2](https://user-images.githubusercontent.com/98538788/229934849-c8bc0a3d-24a5-4926-ada6-dcff4cae6994.png)
 
-
 # Predicting the Maximum Marshmallow Height
 
-First, the object will drop from a height $H_o$ to the plank at height $2 H_p$ where its gravitational potential energy is converted into kinetic energy. The velocity just before impact would be
+First, let's calculate some useful quantities. The angle of elevation of the inclined plane will be given by $\sin(\theta) = x/r$ and the height of the inclined plane will be $y = \sqrt{r^2 - x^2}$. Using this, the initial height of the right end of the plank will be $H_{p,i} = L \sin(\theta)$. With these considerations, the object $M_o$ will drop from a height $H_o$ to the plank at height $H_{p,i}$ where its gravitational potential energy is converted into kinetic energy. The velocity just before impact would be
 
 \begin{equation}
-v_o = \sqrt{2 g (H_o - 2 H_p)}
+v_o = \sqrt{2 g (H_o - H_{p,i})}
 \end{equation}
-Then, assume that the collision is perfectly inelastic so that the falling object sticks to the cup. The falling object will strike the plank at an angle $\theta$ off the normal given by $\sin(\theta) = \frac{2 H_p}{H_o}$ and the combined system will have a rotational inertia $I = (1/12) M_p L^2 + (M_o + M_m + M_c) (L/2)^2$. This results in the following equation for momentum conservation as 
+Then, assume that the collision is perfectly inelastic so that the falling object sticks to the cup. The falling object will strike the plank at an angle $\theta$ off  the normal direction to the plank and the combined system will have a rotational inertia $I = (1/12) M_p L^2 + (M_o + M_c) (L-r)^2 + M_m r^2$. This results in the following equation for momentum conservation as 
 
 \begin{equation}
-  M_o v_o (L/2) \cos(\theta) = I \omega_1
+  M_o v_o (L-r) \cos(\theta) = I_1 \omega_1
 \end{equation}
 so that the angular speed $\omega_1$ of the plank is
 
 \begin{equation}
-  \omega_1 = \frac{M_o v_o L \cos(\theta)}{2 I}
+  \omega_1 = \frac{M_o v_o (L-r) \cos(\theta)}{I_1}
 \end{equation}
 Next, the imbalance of mass on the right and left hand side will add rotational kinetic energy as the difference in gravitational energy in the system. This can be expressed as
 
 \begin{equation}
-M_m g (2 H_p) + \frac{1}{2} I \omega_1^2 = (M_o+M_c) g (2 H_p) + \frac{1}{2} I \omega_2^2 
+(M_o+M_c) g H_{p,i} - M_p g (r-L/2) \sin(\theta) + \frac{1}{2} I_1 \omega_1^2 = M_m g H_{p,f} + M_p g (r-L/2) \sin(\phi) + \frac{1}{2} I_1 \omega_2^2
 \end{equation}
-which can be rearranged for an increased angular speed $\omega_2$
+where $\phi$ is the new angle of elevation that the ramp makes and $H_{p,f} = L \sin(\phi)$ which can be rearranged for an increased angular speed $\omega_2$
 
 \begin{equation}
   \omega_2 = \sqrt{\frac{2 g (2 H_p) (M_c + M_o - M_m)}{I} + \omega_1^2}
