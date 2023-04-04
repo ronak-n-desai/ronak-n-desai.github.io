@@ -67,7 +67,7 @@ Finally, the velocity of the left end of the plank just after the right end hits
 
 # Changing the Pivot Point
 
-The previous section
+The previous section assumed that the end of the angled
 
 # Marshmallow Height Calculator 
 <form id="calc" oninput="calcheight()">
