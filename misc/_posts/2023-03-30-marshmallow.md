@@ -9,18 +9,10 @@ Using a heavy object of mass $M_o$, one can launch a lighter object (like a mars
 
 ![image](https://user-images.githubusercontent.com/98538788/228967807-2d8e5a2d-676a-4455-bdab-8997203bf7ba.png)
 
-Here, $M_o$ falls from a height $H_o$ into a cup of mass $M_c$ that is affixed to the end of a plank of length $L$ and mass $M_p$. The middle of the plank is elevated to a height $H_p$. After the heavy object falls into the cup, it will cause the plank to rotate downwards until the right end of the plank hits the ground. This will impart a velocity upwards into the marshmallow $v_m$ launching it up to a final height $H_m$. 
+Here, $M_o$ falls from a height $H_o$ into a cup of mass $M_c$ that is affixed to the end of a plank of length $L$ and mass $M_p$. The inclined plane that the plank sits on is of height $H_p$. After the heavy object falls into the cup, it will cause the plank to rotate downwards until the right end of the plank hits the ground. This will impart a velocity upwards and to the right into the marshmallow $v_p$ launching it up to a final height $H_m$. 
 
-![image](https://user-images.githubusercontent.com/98538788/228967964-815353c3-ea23-49b4-ad26-82975437ee80.png)
+![pic2](https://user-images.githubusercontent.com/98538788/229934849-c8bc0a3d-24a5-4926-ada6-dcff4cae6994.png)
 
-# Obtaining an Upper Limit
-
-Due to conservation of energy, we know that the amount of gravitational potential energy of the marshmallow at its peak height must be less than the amount of potential energy of the object at its initial height. Using this, we can predict the maximum possible height of the marshmallow as 
-
-\begin{equation}
-H_m = \frac{M_o}{M_m} H_o
-\end{equation}
-however, the actual height should be much less than this due to energy being transferred to the plank as well as being lost through collisions.
 
 # Predicting the Maximum Marshmallow Height
 
