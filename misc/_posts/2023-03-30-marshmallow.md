@@ -65,6 +65,10 @@ Finally, the velocity of the left end of the plank just after the right end hits
   H_m = \frac{(v_p \cos(\theta))^2}{2 g} + 2 H_p
 \end{equation}
 
+# Changing the Pivot Point
+
+The previous section
+
 # Marshmallow Height Calculator 
 <form id="calc" oninput="calcheight()">
   <div>
