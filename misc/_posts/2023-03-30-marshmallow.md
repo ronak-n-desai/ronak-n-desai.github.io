@@ -38,22 +38,22 @@ Next, the imbalance of mass on the right and left hand side will add rotational 
 where $\phi$ is the new angle of elevation that the ramp makes and $H_{p,f} = L \sin(\phi)$ which can be rearranged for an increased angular speed $\omega_2$
 
 \begin{equation}
-  \omega_2 = \sqrt{\frac{2 g (2 H_p) (M_c + M_o - M_m)}{I} + \omega_1^2}
+  \omega_2 = \sqrt{\frac{(2 g ( (M_c + M_o) H_{p,i} - M_m H_{p,f} - M_p (r-l/2)(\sin(\theta) + \sin(\phi))}{I_2} + \omega_1^2}
 \end{equation}
-At this point, we could predict the velocity of the marshmallow to be given by the current speed of the left end of the plank, which would be 
+After the right end hits the floor, if plank rotates about its end, it will have a new rotational inertia $I_2 = M_p ((1/12)L^2 + (L-r)^2) + M_m L^2$. Assuming energy conservation leads to
 
 \begin{equation}
-    v_p = (L/2) \omega_2
+\frac{1}{2} I_1 \omega_2^2 = \frac{1}{2} I_2 \omega_3^2 
 \end{equation}
-but this under-predicts the actual height of the marshmallow. Instead, after the right end hits the floor, if plank rotates about its end, it will have a new rotational inertia $I' = \frac{1}{3} M_p L^2 + M_m L^2$. Assuming energy conservation leads to
+or
 
 \begin{equation}
-\omega_3 = \omega_2 \sqrt{\frac{I}{I'}}
+\omega_3 = \omega_2 \sqrt{\frac{I_1}{I_2}}
 \end{equation}
-Finally, the velocity of the left end of the plank just after the right end hits the ground is $v_p = L \omega_3$ which will be equal to the velocity of the marshmallow as it is also on the left end of the rod. The marshmallow will fly at this velocity into the air with a vertical component given by $v_m = v_p \cos(\theta)$ and reach a final height $H_m$ given by 
+Finally, the velocity of the left end of the plank just after the right end hits the ground is $v_p = L \omega_3$ which will be equal to the velocity of the marshmallow as it is also on the left end of the rod. The marshmallow will fly at this velocity into the air with a vertical component given by $v_p \cos(\phi)$ and reach a final height $H_m$ given by 
 
 \begin{equation}
-  H_m = \frac{(v_p \cos(\theta))^2}{2 g} + 2 H_p
+  H_m = \frac{(v_p \cos(\phi))^2}{2 g} + H_{p,f}
 \end{equation}
 
 # Changing the Pivot Point
