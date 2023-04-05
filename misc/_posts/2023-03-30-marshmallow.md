@@ -4,6 +4,7 @@ title: Marshmallow Launching
 use_math: true
 category: misc
 ---
+Let's launch a marshmallow really high up into the air!
 
 Using a heavy object of mass $M_o$, one can launch a lighter object (like a marshmallow) of mass $M_m$ by dropping the object onto a see-saw type of catapult depicted below
 
