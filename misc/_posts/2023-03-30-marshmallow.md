@@ -40,10 +40,12 @@ Next, the imbalance of mass on the right and left hand side will add rotational 
 </p>
 where $\phi$ is the new angle of elevation that the ramp makes and $H_{p,f} = L \sin(\phi)$ which can be rearranged for an increased angular speed $\omega_2$
 
-\begin{equation}
+<p>
+\begin{align}
   \omega_2 &= \\
   &\sqrt{\frac{(2 g ( (M_c + M_o) H_{p,i} - M_m H_{p,f} - M_p (r-L/2)(\sin(\theta) + \sin(\phi))}{I_2} + \omega_1^2} \nonumber
-\end{equation}
+\end{align}
+</p>
 After the right end hits the floor, if plank rotates about its end, it will have a new rotational inertia $I_2 = M_p ((1/12)L^2 + (L-r)^2) + M_m L^2$. Assuming energy conservation leads to
 
 \begin{equation}
