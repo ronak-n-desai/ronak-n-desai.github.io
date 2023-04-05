@@ -144,9 +144,13 @@ ax.text(com-2, 125, 'Height = ' + str(np.round(calc_height(r=com/100), 2)) + ' m
   <input type="number" step="any" id="mO" name="mO" min="1" max="1000" value="143.2" size="5">
   </div>    
   <div>     
-  <label for="h3">Shim Angle Height (cm):</label>
-  <input type="number" step="any" id="h3" name="h3" min="1" max="10" value="2.0" size="5">
-  </div>     
+  <label for="y">Ramp Height (cm):</label>
+  <input type="number" step="any" id="y" name="y" min="1" max="10" value="2.0" size="5">
+  </div>
+  <div>     
+  <label for="y">Ramp Diagonal Length (cm):</label>
+  <input type="number" step="any" id="r" name="r" min="1" max="60" value="31.5" size="5">
+  </div>  
   <div>     
   <label for="h1">Object Drop Height (cm):</label>
   <input type="number" step="any" id="h1" name="h1" min="10" max="200" value="50.0" size="5">
@@ -156,13 +160,7 @@ ax.text(com-2, 125, 'Height = ' + str(np.round(calc_height(r=com/100), 2)) + ' m
   <input type="number" step="any" id="l" name="l" min="10" max="100" value="61.5" size="5">
   </div>
   <div> 
-  <label for="output1"><strong>Height Upper Bound (cm)</strong>: </label><span class="output" id="output1" style="color:blue"></span>
-  </div>
-  <div> 
-  <label for="output2"><strong>Calculated Height 1 (cm)</strong>: </label><span class="output" id="output2" style="color:blue"></span>
-  </div>
-  <div> 
-  <label for="output3"><strong>Calculated Height 2 (cm)</strong>: </label><span class="output" id="output3" style="color:blue"></span>
+  <label for="output1"><strong>Calculated Height (cm)</strong>: </label><span class="output" id="output1" style="color:red"></span>
   </div>
 </form>
 
@@ -171,24 +169,36 @@ ax.text(com-2, 125, 'Height = ' + str(np.round(calc_height(r=com/100), 2)) + ' m
        const mO0 = document.getElementById("mO");
        const mM0 = document.getElementById("mM");
        const mC0 = document.getElementById("mC");
-       const h30 = document.getElementById("h3");
+       const y0 = document.getElementById("y");
+       const r0 = document.getElementById("r");
        const h10 = document.getElementById("h1");
        const l0 = document.getElementById("l");
        const out1 = document.getElementById("output1");
-       const out2 = document.getElementById("output2");
-       const out3 = document.getElementById("output3");
        
        function calcheight() {
               let mP = mP0.value/1000.0;
               let mO = mO0.value/1000.0;
               let mM = mM0.value/1000.0;
               let mC = mC0.value/1000.0;
-              let h3 = h30.value/100.0;
+              let y = y0.value/100.0;
+              let r = r0.value/100.0;
               let h1 = h10.value/100.0;
               let l = l0.value/100.0;
-              out1.innerHTML = Math.round((mO/mM)*h1*100);
-              out2.innerHTML = Math.round(100*(-3*(4*h3*h3-l*l)*(-12*h1*h3**2*mO**2+24*h3**2*mO**2+3*h1*l**2*mO**2+2*h3*l**2*(3*mC**2-3*mM**2-mM*mP+mO*mP+mC*(6*mO+mP)))/(l**4*(3*mC+3*mM+3*mO+mP)**2)+2*h3));
-              out3.innerHTML = Math.round(100*(-3*(4*h3*h3-l*l)*(-12*h1*h3**2*mO**2+24*h3**2*mO**2+3*h1*l**2*mO**2+2*h3*l**2*(3*mC**2-3*mM**2-mM*mP+mO*mP+mC*(6*mO+mP)))/(l**4*(3*mM+mP)*(3*mM+mP+3*mO+3*mC))+2*h3));
+              let g = 9.8;
+              let x = Math.sqrt(r**2-y**2);
+              let theta = Math.asin(y/r);
+              let phi = Math.asin(y/(l-r));
+              let hpi = l*Math.sin(theta);
+              let hpf = l*Math.sin(phi)
+              let i1 = (1/12)*mP*l**2 + (mO+mC)*(l-r)**2 + mM*r**2
+              let v1 = Math.sqrt(2*g*(h1-hpi))
+              let omega1 = (mO*v1*(l-r)*Math.cos(theta))/i1
+              let omega2 = Math.sqrt(2*g*( (mO+mC)*hpi - mM*hpf-mP*(r-l/2)*(Math.sin(theta) + Math.sin(phi)) )/i1 + omega1**2)
+              let i2 = mP*((1/12)*l**2 + (l-r)**2 ) + mM*l**2
+              let omega4 = Math.sqrt(i1/i2)*omega2
+              let v4 = l*omega4
+              let h=(v4*Math.cos(phi))**2/(2*g)+hpf
+              out1.innerHTML = Math.round(h*100);
        }
        
 </script>
