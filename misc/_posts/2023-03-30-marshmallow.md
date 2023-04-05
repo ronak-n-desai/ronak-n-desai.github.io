@@ -33,7 +33,8 @@ so that the angular speed $\omega_1$ of the plank is
 Next, the imbalance of mass on the right and left hand side will add rotational kinetic energy as the difference in gravitational energy in the system. This can be expressed as
 
 \begin{equation}
-(M_o+M_c) g H_{p,i} - M_p g (r-L/2) \sin(\theta) + \frac{1}{2} I_1 \omega_1^2 = M_m g H_{p,f} + M_p g (r-L/2) \sin(\phi) + \frac{1}{2} I_1 \omega_2^2
+(M_o+M_c) g H_{p,i} - M_p g (r-L/2) \sin(\theta) + \frac{1}{2} I_1 \omega_1^2 = \\
+M_m g H_{p,f} + M_p g (r-L/2) \sin(\phi) + \frac{1}{2} I_1 \omega_2^2
 \end{equation}
 where $\phi$ is the new angle of elevation that the ramp makes and $H_{p,f} = L \sin(\phi)$ which can be rearranged for an increased angular speed $\omega_2$
 
