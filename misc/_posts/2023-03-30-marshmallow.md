@@ -7,11 +7,11 @@ category: misc
 
 Using a heavy object of mass $M_o$, one can launch a lighter object (like a marshmallow) of mass $M_m$ by dropping the object onto a see-saw type of catapult depicted below
 
-![image](https://user-images.githubusercontent.com/98538788/228967807-2d8e5a2d-676a-4455-bdab-8997203bf7ba.png)
+![image](https://user-images.githubusercontent.com/98538788/229964361-4cb95568-75ba-484b-87dc-0ab20dff5bd4.png)
 
 Here, $M_o$ falls from a height $H_o$ into a cup of mass $M_c$ that is affixed to the end of a plank of length $L$ and mass $M_p$. The inclined plane that the plank sits on has a horizontal length $x$ and diagonal length $r$. After the heavy object falls into the cup, it will cause the plank to rotate downwards until the right end of the plank hits the ground. This will impart a velocity upwards and to the right into the marshmallow $v_p$ launching it up to a final height $H_m$. 
 
-![pic2](https://user-images.githubusercontent.com/98538788/229934849-c8bc0a3d-24a5-4926-ada6-dcff4cae6994.png)
+![image](https://user-images.githubusercontent.com/98538788/229964388-bef57f38-9579-4ab6-a979-7746d3dfc7f3.png)
 
 # Predicting the Maximum Marshmallow Height
 
@@ -56,9 +56,7 @@ Finally, the velocity of the left end of the plank just after the right end hits
   H_m = \frac{(v_p \cos(\phi))^2}{2 g} + H_{p,f}
 \end{equation}
 
-# Changing the Pivot Point
-
-The previous section assumed that the end of the angled
+# Python Analysis
 
 # Marshmallow Height Calculator 
 <form id="calc" oninput="calcheight()">
