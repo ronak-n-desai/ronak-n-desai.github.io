@@ -61,6 +61,69 @@ Finally, the velocity of the left end of the plank just after the right end hits
 \end{equation}
 
 # Python Analysis
+We can write some functions in python to calculate the predicted marshmallow heights
+
+'''python 
+import numpy as np
+import matplotlib.pyplot as plt
+import math
+
+def calc_height(mO=0.1432, mC=0.0092, mP=0.0877, mM=0.0059, h1=0.50, l=0.615, r=.315, y=.02):
+    g = 9.8
+    x = np.sqrt(r**2-y**2)
+    theta = np.arcsin(y/r)
+    phi = np.arcsin(y/(l-r))
+    hpi = l*np.sin(theta)
+    hpf = l*np.sin(phi)
+    i1 = (1/12)*mP*l**2 + (mO+mC)*(l-r)**2 + mM*r**2
+    v1 = np.sqrt(2*g*(h1-hpi))
+    omega1 = (mO*v1*(l-r)*np.cos(theta))/i1
+    omega2 = np.sqrt(2*g*( (mO+mC)*hpi - mM*hpf-mP*(r-l/2)*(np.sin(theta) + np.sin(phi)) )/i1 + omega1**2)
+    i2 = mP*((1/12)*l**2 + (l-r)**2 ) + mM*l**2
+    omega4 = np.sqrt(i1/i2)*omega2
+    v4 = l*omega4
+    h=(v4*np.cos(phi))**2/(2*g)+hpf
+    return h
+
+def calc_com(mC=0.0092, mP=0.0877, mM=0.0059, l=0.615):
+    return (mC*l+mP*l/2)/(mC+mP+mM)
+'''
+
+Then, let's plot the predicted marshmallow height as a function of the object mass $M_o$
+
+'''python 
+ms = np.linspace(0.01, 0.2, 100)
+hs = [calc_height(mO=m)*100 for m in ms]
+fig, ax = plt.subplots()
+ax.set_ylim([0, 300])
+ax.set_ylabel('Marshmallow Height (cm)')
+ax.set_xlabel('Object Mass (g)')
+ax.text(120, 225, 'Height = ' + str(np.round(calc_height(mO=0.1432), 2)) + ' m', c='b', fontsize='12')
+ax.text(20, 125, 'Height = ' + str(np.round(calc_height(mO=0.044), 2)) + ' m', c='g', fontsize='12')
+ax.vlines(143.2, 150, 200, color='b', label='Copper')
+ax.vlines(44, 25, 75, color='g', label='Aluminum')
+ax.plot(ms*1000, hs, c='r')
+ax.legend(loc='lower right')
+'''
+![image](https://user-images.githubusercontent.com/98538788/230082037-f3f40fde-de7d-4939-8873-e672ec5064dc.png)
+
+Also, we can examine the relationship between the ramp length $r$ and the marshmallow height
+
+'''python 
+rs = np.linspace(0.3, 0.5, 100)
+hs = [calc_height(r=r)*100 for r in rs]
+fig, ax = plt.subplots()
+ax.set_ylim([0, 200])
+ax.set_ylabel('Marshmallow Height (cm)')
+ax.set_xlabel('Ramp Diagonal Length (cm)')
+ax.plot(rs*100, hs, c='r')
+com = calc_com()*100
+ax.vlines(com, 150, 180, color='b')
+ax.text(com-2, 125, 'Height = ' + str(np.round(calc_height(r=com/100), 2)) + ' m', c='b', fontsize='12')
+'''
+
+![image](https://user-images.githubusercontent.com/98538788/230081988-c3052536-f2bf-4a98-923d-3a663c92720d.png)
+
 
 # Marshmallow Height Calculator 
 <form id="calc" oninput="calcheight()">
