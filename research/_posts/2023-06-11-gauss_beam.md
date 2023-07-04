@@ -6,4 +6,4 @@ published: true
 category: research
 ---
 
-See [Interactive Jupyter Notebook](https://ronak-n-desai.github.io/nblite/index.html?url=./notebooks/Gaussian_Beam.ipynb)https://ronak-n-desai.github.io/nblite/index.html?url=./notebooks/Gaussian_Beam.ipynb
+[Interactive Jupyter Notebook](https://ronak-n-desai.github.io/nblite/index.html?url=./notebooks/gaussian_beam.ipynb)
