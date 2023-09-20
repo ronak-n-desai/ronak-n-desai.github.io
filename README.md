@@ -1,3 +1,6 @@
+# About
+My name is Ronak Desai and this is my personal website. I forked this repository from a Jekyll template, feel free to fork this repository to use as a template for your own personal website.
+
 ## Credits
 
 - [Jekyll](https://github.com/jekyll/jekyll) - Thanks to its creators, contributors and maintainers.
