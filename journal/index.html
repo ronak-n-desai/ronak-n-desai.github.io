@@ -146,28 +146,5 @@ layout: default
                 }
             }
         </script>
-
-      <div class="posts">
-  {% for post in site.posts %}
-  {% if post.categories contains 'journal' %}
-    <article class="post">
-      <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
-
-      <!-- Remove Excerpts for Journal Entries 
-      <div class="entry">
-        {{ post.excerpt }}
-      </div>
-      -->     
-
-      <div class="date">
-        Written on {{ post.date | date: "%B %e, %Y" }}
-      </div>
-      <!-- Remove Read More Text b/c we can just click date instead
-      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
-      -->
-    </article>
-  {% endif %}
-  {% endfor %}
-</div>
     </body>
 </html>
