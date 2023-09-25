@@ -1,7 +1,7 @@
-<!DOCTYPE html>
-<html>
-  <body>
-        <div class="posts">
+---
+layout: default
+---
+<div class="posts">
   {% for post in site.posts %}
   {% if post.categories contains 'journal' %}
     <article class="post">
@@ -23,5 +23,3 @@
   {% endif %}
   {% endfor %}
 </div>
-  </body>
-</html>
