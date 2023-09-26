@@ -2,7 +2,7 @@
 layout: post
 title: Shape Functions
 use_math: true
-category: research
+category: physics
 ---
 
 In PIC simulations, we are solving for quantities on a discrete grid. So, for example, if we are looking at charge, it would seem that all the charge would be concentrated in macroscopic point charges. However, this is not capturing the true physical picture of a simulation, because each of these simulation charges are macroparticles and represent many, many real particles. It would make more sense to smooth these charges out into some type of shape function that represents the charge density. Closer to the macroparticle location, we should expect a higher value of the shape function and further away, it should be lower.
