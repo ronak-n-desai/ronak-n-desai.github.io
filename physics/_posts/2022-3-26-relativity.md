@@ -3,6 +3,7 @@ layout: post
 title: Relativity and E&M
 use_math: true
 category: physics
+comments: true
 ---
 
 In an introductory Electricity and Magnetism Class, we learn that the magnetic force on a charge in a magnetic field is dependendent on its velocity. This is an issue because if we move into an inertial reference frame moving with the particle, the magnetic force will appear to vanish!
@@ -170,12 +171,12 @@ If we take these things into consideration, then we should get
 
 and now, no laws of physics are broken!
 
-
-
-
 **References:** 
-
 [Feynman Lectures](https://www.feynmanlectures.caltech.edu/II_13.html) 
+
+{% if page.comments %}
+
+{% endif %}
 
 [Wikipedia (The Most Reliable Source)](https://en.wikipedia.org/wiki/Length_contraction#:~:text=Length%20contraction%20can%20also%20be%20derived%20from%20time,multiple%20times%2C%20and%20is%20represented%20by%20the%20relation%3A)
 
