@@ -2,7 +2,7 @@
 layout: post
 title: Marshmallow Launching
 use_math: true
-category: misc
+category: fun
 ---
 Let's launch a marshmallow really high up into the air!
 
