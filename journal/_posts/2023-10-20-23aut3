@@ -1,9 +1,17 @@
 ---
 layout: post
-title: ...
+title: No Laser Simulation Results, DPP Poster, 
 use_math: true
 category: journal
 ---
+
+# Ejected Electrons
+
+I realized that my previous results on the electrons being ejected from the simulation didn't make any sense. The electric fields from the positive ions should pull the electrons back and it should take a relatively long time for the electrons to leave the simulation.
+We can estimate this by computing the RMS velocity of the electrons which is $7.26 \times 10^5\sqrt{T_\text{eV}}$ m/s from our simulation set up. The corners of the target are around 7 $\mu$m away from the edge of the simulation at a minimum.
+
+Taking this into account, we find that the minimum time for an electron to leave the simulation would be 9.66ps at 1eV or 305fs at 1000eV. If we additionally add the protons in to slow the electons down, this time would get much larger.
+As a result, we are not losing many electrons on the time-scale of less than 1ps when there is no laser present. The below plot confirms this.
 
 # Things to Do
 - 
