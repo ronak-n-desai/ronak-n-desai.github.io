@@ -13,5 +13,15 @@ We can estimate this by computing the RMS velocity of the electrons which is $7.
 Taking this into account, we find that the minimum time for an electron to leave the simulation would be 9.66ps at 1eV or 305fs at 1000eV. If we additionally add the protons in to slow the electons down, this time would get much larger.
 As a result, we are not losing many electrons on the time-scale of less than 1ps when there is no laser present. The below plot confirms this.
 
+
+# Heating Results
+
+
+# E Field Fluctuations
+https://phys.libretexts.org/Bookshelves/Thermodynamics_and_Statistical_Mechanics/Essential_Graduate_Physics_-_Statistical_Mechanics_(Likharev)/05%3A_Fluctuations/5.01%3A_Characterization_of_fluctuations
+
+
+# DPP Poster
+
 # Things to Do
 - 
