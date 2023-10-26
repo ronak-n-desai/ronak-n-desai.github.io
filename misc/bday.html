@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+.clue {
+  display: none;
+  border-color: green;
+  border-style: solid;
+  border-width: 1px;
+  background-color: lightblue;
+  
+}
+* {
+	max-width: 390px;
+	margin:auto;
+	text-align:center;
+	font-size: 12px;
+}
+
+.clueh {
+	font-size: 4em;
+	color:green;
+}
+
+.cluep {
+	font-size: 1.5em;
+	padding-bottom: 1em;
+}
+#crop-top {
+  height: 202px;
+  width: 175.5px;
+  object-fit: cover;
+  object-position: bottom;
+}
+
+em{
+	font-family: 'Brush Script MT', cursive;
+	font-size:2em;
+	color:purple;
+	margin-left:20%;
+}
+</style>
+</head>
+<body>
+
+
+<form action="javascript:checkPswd()" method="get" style="padding-bottom:1em;">
+  <label for="label" style="font-size:2em; width:30%;">Password:</label>
+  <input type="text" id="pswd" value="" style="font-size:1.5em; width:40%">
+  <input type="submit" formmethod="post" value="Submit" style="font-size:1.5em; width:30%;">
+</form>
+
+<div id="clue0" class="clue" style="display:block">
+<h1 class="clueh">Scavenger Hunt</h1>
+<p class="cluep">
+Hi Claire, Happy Birthday!!! <br>
+I wish I could be there to celebrate in person! <br>
+I set up a small scavenger hunt with <br>
+some gifts for you in my apartment! <br>
+<em>-Ronak</em>
+</p>
+
+</div>
+
+<div id="clue1" class="clue">
+<h1 class="clueh">Clue 1</h1>
+<p class="cluep">
+Cooking at your place, I'm always confused <br>
+I don't know how many cups of flour I've used! <br>
+Check the cabinet with the bowls and plates. <br>
+This is where your first gift awaits! <br>
+</p>
+<img src="IMG_0905.jpg" alt="empty" width=45%>
+<img src="IMG_6093.jpg" alt="empty" width=45%>
+</div>
+
+<div id="clue2" class="clue">
+<h1 class="clueh">Clue 2</h1>
+<p class="cluep">
+Cooking with you is so much fun, <br>
+(when not burning garlic or slicing a thumb!) <br>
+Google is our friend, but books are better <br>
+Find your next gift in a drawer of my dresser! <br>
+</p>
+<img src="IMG_1375.jpg" alt="empty" width=45%>
+<img src="IMG_6120.jpg" alt="empty" width=45%>
+</div>
+
+<div id="clue3" class="clue">
+<h1 class="clueh">Clue 3</h1>
+<p class="cluep">
+I know you love sweets, but you have a condition <br>
+You're pre-diabetic! Cutting sugar is your mission <br>
+Here's a collection of things to aid in your journey <br>
+Some low-sugar snacks, look in my corner pantry! <br>
+</p>
+<img src="IMG_5900.jpg" alt="empty" width=45%>
+<img src="IMG_6218.jpg" alt="empty" width=45%>
+</div>
+
+<div id="clue4" class="clue">
+<h1 class="clueh">Clue 4</h1>
+<p class="cluep">
+For the final item, make a trek to the basement <br>
+Be careful walking down to retrieve your present! <br>
+This is as much of a gift to me as to you <br>
+A handwriten card and a jigsaw puzzle (or two!) <br>
+</p>
+<img src="IMG_6484.jpg" alt="empty" width=45%>
+<img src="IMG_6250.jpg" alt="empty" width=45%>
+</div>
+
+<div id="final" class="clue">
+<h1 class="clueh">Finally ...</h1>
+<p class="cluep">
+Hope you had a lot of fun on this journey of clues! <br>
+&#x1F49A; You're my favorite person, I LOVE you!! &#x1F49A; <br>
+</p>
+
+<img src="IMG_8681.jpg" alt="empty" width=45%>
+<img src="IMG_9000.jpg" alt="empty" width=45% id="crop-top">
+
+<p style="color:blue;">
+<b style="font-size:1.9em;">&#127775; HAPPY BIRTHDAY CLAIRE!! &#127775;</b>
+</p>
+</div>
+
+
+
+<script>
+let p1 = "socks"
+let p2 = "dogs"
+let p3 = "moon"
+let p4 = "pasta"
+let p5 = "bday"
+
+function show(pwd){
+
+	clues = document.getElementsByClassName("clue");
+	for (let i = 0; i < 6; i++){
+		clues[i].style.display = "none";
+	}
+	
+	switch (pwd) {
+		case p1:
+			clues[1].style.display = "block";
+			break;
+		case p2:
+			clues[2].style.display = "block";
+			break;
+		case p3:
+			clues[3].style.display = "block";
+			break;
+		case p4:
+			clues[4].style.display = "block";
+			break;
+		case p5:
+			clues[5].style.display = "block";
+			break;
+	}
+	
+}
+
+function checkPswd() {
+	var pwd = document.getElementById("pswd").value;
+	if (pwd == p1 || pwd == p2 || pwd == p3 || pwd == p4 || pwd == p5) {
+		show(pwd)
+	}
+	else {
+		alert("Try Again!");
+	}
+}
+</script>
+</body>
+</html>
