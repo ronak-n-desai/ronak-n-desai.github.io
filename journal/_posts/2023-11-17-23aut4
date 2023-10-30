@@ -1,9 +1,16 @@
 ---
 layout: post
-title: ...
+title: Re-doing Fuchs Paper, Working on INNs
 use_math: true
 category: journal
 ---
 
+# Fuchs Paper Redux
+
+After the rejection from HPLSE, I decided to rework the paper, improving on a few things. First, I properly split the two datasets into a training and testing set. I varied the number of training points from 200 to 5000 points.
+Within the training set, I performed 5-fold CV while performing Randomized Searches and Grid Searches to find the optimal hyperparameters for all the regression algorithms (SVR, GPR, Polynomial Ridge Regression). For the Neural Network, I set aside 20 percent of the training data as a validation set and stopped training when the validation loss stopped decreasing.
+All algorithms were able to run on CPU, but I also ran on GPU as well to compare run-time performance (except the polynomial regression which has an almost instantaneous run-time on CPU which I didn't run on GPU because RAPIDS does not support multi-output polynomial regression).
+I included Grid-Search `.pkl` files for the grid-search results.
+
 # Things to Do
-- 
+- Finish compiling results and update Overleaf on github
